@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background: #e0ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .btn-wrapper{
+    /* border: 1px solid red; */
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgb(10, 46, 164);
+    cursor: pointer;
+    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+    transition: all ease 0.2s;
+  }  
+
+  .btn-wrapper:hover{
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
+  }
+
+  .btn{
+    border: none;
+    color: white;
+    background: transparent;
+    text-align: center;
+
+  }
+
+  .btn-text-one{
+   font-size: medium;
+   font-weight: 300;
+   text-transform: uppercase;
+  }
+  

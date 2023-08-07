@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html,body{
+    height: 100vh;
+}
+
+
+.nav-menu-icons{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+}
+
+/* nav-list */
+.nav-items{
+    display:flex;
+    margin-left: 9em;
+}
+/* logo */
+.navbar img {
+    object-fit: contain;
+    height: 5.8vmin;
+    margin-left:4em; 
+}
+/* nav-item */
+.nav-item{
+    margin: 1em 1.8em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.nav-items h5:hover{
+    color: rgb(200, 104, 19);
+}
+h5.active-item{
+    color: rgb(200, 104, 19);
+    font-weight: bolder;
+}
+
+/* intro-section */
+.intro-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 6.3em;
+}
+
+.left-section{
+    width: 57%;
+    margin: 5.5em 0;
+}
+
+.left-section h3 {
+    font-size: 2em;
+    font-weight:lighter;
+    font-family: 'Verdana';
+    display: flex;
+    align-items: center;
+    color: rgb(15, 22, 22);
+
+}
+
+.left-section h3 img{
+    margin-left: 0.4em;
+    margin-bottom: 0.3em;
+    object-fit: contain;
+    height: 1.2em;
+    opacity: 0.5;
+}
+
+.left-section h1{
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.sub-headlines{
+    margin: 0.8em 4em;
+}
+
+
+
+.sub-headlines h5 img{
+    width: 1.6em;
+    height: 1.6em;
+    background: rgb(241, 67, 3);
+    border-radius: 50%;
+    padding: 0.2em;
+    margin-right: 0.8em;
+    
+}
+
+.sub-headlines h5{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-family: 'Verdana';
+    font-weight: 500;
+    color: rgb(27, 22, 22);
+    opacity: 0.8;
+    line-height: 3.4em;
+}
+
+.text{
+    margin: 2.5em 0em 2em 0em;
+    font-size: 1.9vmin;
+    font-family: 'poppins';
+    color: rgb(177, 161, 161);
+   
+}
+
+.action-btn{
+    border-radius: 22px;
+    color: whitesmoke;
+    background: rgb(222, 103, 5);
+    border: none;
+    padding: 0.7em 2em;
+    font-size: 0.9em;
+    margin-right: 2.5em;
+    margin-top: 1.3em;
+}
+
+
+.right-section{
+    width: 43%;
+}
+
+.right-section{
+    position: relative;
+}
+
+.headphone-div img{
+    object-fit: contain;
+    height:32em;    
+}
+
+.headphone-div .discount{
+    object-fit: contain;
+    height: 7em;
+    position: absolute;
+    top: 19em;
+    left: -0.5em;
+}
+.discount-content{
+    color: white;
+    position: absolute;
+    left: 1.2em;
+    bottom: 9.2em;
+    line-height: 1.7em;
+}
+
+.discount-content h4{
+    font-size: 0.7em;
+   
+
+}
+.discount-content h1{
+    font-size: 2.7em;
+    
+    
+}
+
+.dots{
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+    margin: auto;
+  
+    
+}
+.dot{
+   margin: 0 1.3em;
+}
+.yellow-dot{
+    width:1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    background: yellow;
+}
+.tomato-dot{
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    background: rgb(255, 102, 0);
+
+}
+.black-dot{
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    background: black;
+
+}
+
+.action-btn-btn{
+    border-radius: 22px;
+    color: whitesmoke;
+    background: rgb(222, 103, 5);
+    border: none;
+    padding: 0.7em 2em;
+    font-size: 0.9em;
+    position: absolute;
+    left: 11.5em;
+    bottom:-5em;
+
+} 
+
+
+/* media query */
+
+
+@media (min-width: 845px) and (max-width: 1128px){
+    .navbar{
+        margin-top: 1.5em;
+    }
+    .nav-items{
+        display: none;
+    }
+    .right_logo{
+        display: none;
+    }
+
+    .nav-menu-icons{
+        display: inline-block;
+        margin-right: 3.5em;
+    }
+
+    .navbar{
+        padding: 1.3em;
+    }
+
+    .intro-section{
+        display:block;
+        
+    }.left-section{
+        width: 100%;
+        
+    }
+
+    .headphone-div img{
+        height:79vmin; 
+        padding:0 3em; 
+    }
+
+    .headphone-div .discount{
+        height: 17vmin;
+        top: 23em;
+        left: -3em;
+    }
+    .discount-content{
+        left: 2.5em;
+        bottom: 13.5em;
+
+    }
+
+    .dots{
+        width: 61%;   
+        margin-left: 17em;
+    }
+
+   .yellow-dot{
+        width: 1.7em;
+        height: 1.7em;
+
+   } 
+   .tomato-dot{
+        width: 1.7em;
+        height: 1.7em;
+   }
+   .black-dot{
+        width: 1.7em;
+        height: 1.7em;
+
+    }
+
+    .action-btn-btn{
+        width: 70%;
+        font-size: 1em;
+        left: 14.5em;
+       
+    } 
+
+}
+
+@media (min-width: 620px) and (max-width: 845px){
+    .navbar{
+        margin-top: 1.5em;
+    }
+    .nav-items{
+        display: none;
+    }
+    .right_logo{
+        display: none;
+    }
+
+    .nav-menu-icons{
+        display: inline-block;
+        margin-right: 3.5em;
+    }
+    .navbar{
+        padding: 1.3em;
+    }
+    .navbar img {
+        height: 6.1vmin;
+       
+    }
+
+    .left-section{
+        width: 100%;
+        margin: 5.5em 0;
+    }
+
+    .intro-section{
+        display:block;
+        
+    }
+    .text{
+        width: 100%;
+        font-size: 2vmin;
+        
+     }
+    .left-section{
+        width: 100%;
+        
+    }
+
+    .dots{
+        width: 80%;   
+        margin-left: 11em;
+    }
+
+   .yellow-dot{
+        width: 1.6em;
+        height: 1.6em;
+
+   } 
+   .tomato-dot{
+        width: 1.6em;
+        height: 1.6em;
+   }
+   .black-dot{
+        width: 1.6em;
+        height: 1.6em;
+
+    }
+
+
+    .action-btn-btn{
+        width: 85%;
+        left: 11.5em;
+      
+    } 
+}
+
+@media (min-width: 520px) and (max-width: 620px){
+    .navbar{
+        margin-top: 1.5em;
+    }
+    .nav-items{
+        display: none;
+    }
+    .right_logo{
+        display: none;
+    }
+
+    .navbar img {
+        margin-left:2em; 
+    }
+
+    .nav-menu-icons{
+        display: inline-block;
+        margin-right: 2em;
+    }
+
+    .intro-section{
+        display:block;
+        width: 100%;
+        margin: 0 4.5em;
+        
+    }
+    .left-section{
+        width: 100%;
+    }
+
+    .text{
+       width: 75%;
+       font-size: 2.7vmin;
+       
+    }
+
+    .headphone-div img{
+        height:76vmin;    
+    }
+
+    .headphone-div .discount{
+        top: 15em;
+        left: -1em;
+    }
+    .discount-content{
+        left: 0.6em;
+        bottom: 11em;
+
+    }
+
+    .dots{
+        width: 80%;   
+        margin-left: 6em;
+    }
+
+   .yellow-dot{
+        width: 1.5em;
+        height: 1.5em;
+
+   } 
+   .tomato-dot{
+        width: 1.5em;
+        height: 1.5em;
+   }
+   .black-dot{
+        width: 1.5em;
+        height: 1.5em;
+
+    }
+
+
+    .action-btn-btn{
+        width: 80%;
+       left: 6em;
+      
+    } 
+
+   
+
+}
+
+
+
+
+
+

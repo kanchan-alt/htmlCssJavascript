@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/retro-living-room-interior-design_53876-145503.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:34% 39%;
+    color: whitesmoke;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.4em 5em 0;
+ 
+}
+
+.logo_left{
+    font-size: 3.6vmin;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+
+}
+
+.middle_part ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.middle_part ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 0 1em;
+}
+
+.right_part{
+    display: flex;
+    align-items: center;
+
+}
+
+.right_part_left{
+    color: whitesmoke;
+}
+
+.right_part_right{
+    margin-left: 14px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.nav-menu-icons{
+    display: none;
+}
+
+.line{
+     width: 69%;
+     margin-left: 23em;
+     border-top: 2px solid white;
+    
+}
+
+/* Hero section */
+
+.heroSectionMargin{
+    margin: 0 5em;
+    display: flex;
+    justify-content: space-between;
+    height: 79vh;
+}
+
+.leftPart{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.leftPart h1{
+    font-size: 5em;
+    font-weight: 500;
+    font-family: 'sans-serif', Open Sans;
+    line-height: 1.2em;
+    opacity: 1;
+  
+}
+.leftPart button{
+    margin-top: 2.5em;
+    border:2px solid white;
+    border-radius: 4em;
+    padding: 1em 2.1em;
+    background: transparent;
+    color: white;
+    font-size: 2.1vmin;
+}
+
+/* rightPart */
+
+.rightPart{
+    width: 40%;
+    position: relative;
+ }
+
+ .rightPartOne{
+    /* border: 1px solid green; */
+    width: 41%;
+    background-color:rgb(51, 68, 82);
+    position: absolute;
+    top: 3.4em;
+    left: 14em;
+    padding: 1em 1.5em;   
+}
+
+.rightPartOne p{
+    font-size: 0.8em;
+    padding-top: 1em;
+}
+
+.svgimages{
+    width: 70px;
+    padding: 0.1em 1.6em;
+    border-radius: 3em;
+    background: white;
+    color: black;
+    margin-bottom: 10px;
+   
+}
+
+.smallLine{
+    position: absolute;
+    height: 3.2em;
+    width: 9%;
+    border-right: 1px solid white;
+    top: 12.3em;
+    left: 20.6em;
+    
+ }
+ 
+ .circle{
+     position: absolute;
+     top:15.1em;
+     left:23em;
+     border-radius: 50%;
+     width: 12px;
+     height: 12px;
+     background: gainsboro;
+     /* background: rebeccapurple; */
+ }
+
+
+ .rightPartTwo{
+    /* border: 1px solid green; */
+    width: 41%;
+    background-color:rgb(51, 68, 82);
+    position: absolute;
+    bottom: 7em;
+    padding: 1em 1.5em;
+
+}
+.rightPartTwo p{
+    font-size: 0.8em;
+    padding-top: 1em;
+
+}
+.smallLine_two{
+    width:9%;
+    height:3.4em;
+    position: absolute;
+    bottom:0;
+    top:26.4em;
+    left: 12.8em;
+     border-bottom: 0.5px solid gainsboro;
+ }
+
+
+.circle_two{
+    position:absolute;
+    top:29.4em;
+    left: 15.5em;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: gainsboro;
+}
+
+
+
+
+/* media query for Dekstop, large screen */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    body{
+        height: 100vh;
+        background-position: right;
+      
+    }
+    .middle_part{
+        display: none;   
+    }
+
+    .line{
+       display: none;  
+   }
+
+   .leftPart h1{
+    font-size: 6.3vmin;
+    font-weight: 600;
+    line-height: 1.3em;
+ 
+    }
+
+    .rightPartOne{
+        width: 39%;
+        background-color:rgb(51, 68, 82);
+        top: 3.5em; 
+        left: 11em;
+    }
+
+    .smallLine{
+    display: none;
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    .smallLine_two{
+    display: none;
+    }
+
+
+    .circle_two{
+    display: none;
+    }
+
+
+ 
+ 
+
+}
+/* media query small screen, laptop */
+
+@media (min-width: 920px) and (max-width: 1024px) {
+    body{
+        height: 100vh;
+        background-position:right;
+      
+    }
+    .middle_part{
+        display: none;   
+    }
+
+    .line{
+        display: none;  
+    }
+
+    .leftPart h1{
+        font-size: 5.3vmin;
+        font-weight: 600;
+        line-height: 1.3em;
+     
+        }
+    
+    .rightPartOne{
+        width: 39%;
+        background-color:rgb(51, 68, 82);
+        top: 3.5em; 
+        left: 11em;
+    }
+
+    .smallLine{
+    display: none;
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    .smallLine_two{
+    display: none;
+    }
+
+
+    .circle_two{
+    display: none;
+    }
+
+
+}
+
+
+/* media query ipads, Tablets */
+@media (min-width: 769px) and (max-width: 920px) {
+    body{
+        height: 100vh;
+        background-position:90% 0%;
+      
+    }
+    .middle_part{
+        display: none;   
+    }
+
+    .line{
+        display: none;  
+    }
+
+    .leftPart h1{
+        font-size: 4vmin;
+        font-weight: 600;
+        line-height: 1.3em;
+     
+        }
+    
+    .rightPartOne{
+        width: 50%;
+        background-color:rgb(51, 68, 82);
+        top: 3.5em; 
+        left: 7em;
+    }
+
+
+    .rightPartTwo{
+        width: 50%;
+    }
+
+    .smallLine{
+    display: none;
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    .smallLine_two{
+    display: none;
+    }
+
+
+    .circle_two{
+    display: none;
+    }
+
+
+}
+
+/* media query Mobile */
+@media (min-width: 657px) and (max-width: 768px) {
+
+    body{
+        height: 100vh;
+        background-position:right;
+      
+    }
+    .middle_part{
+        display: none;   
+    }
+
+    .line{
+        display: none;  
+    }
+
+    .leftPart h1{
+        font-size: 4vmin;
+     
+        }
+    
+    .rightPartOne{
+        width: 70%;
+        top: 3.5em; 
+        left: 3em;
+    }
+
+
+    .rightPartTwo{
+        width: 70%;
+    }
+
+    .smallLine{
+    display: none;
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    .smallLine_two{
+    display: none;
+    }
+
+
+    .circle_two{
+    display: none;
+    }
+
+
+}
+
+
+@media (min-width: 500px) and (max-width: 658px) {
+    body{
+        height: 100vh;
+        background-position:left;
+      
+    }
+    .middle_part{
+        display: none;   
+    }
+
+    .line{
+        display: none;  
+    }
+    .leftPart{
+        width: 100%;
+    }
+
+    .leftPart h1{
+        font-size: 7vmin;
+     
+        }
+    
+   .rightPart{
+    display: none;
+   }
+    .smallLine{
+    display: none;
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    .smallLine_two{
+    display: none;
+    }
+
+
+    .circle_two{
+    display: none;
+    }
+
+
+}

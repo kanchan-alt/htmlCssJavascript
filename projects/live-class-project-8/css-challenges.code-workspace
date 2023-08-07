@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../Downloads/css-challenges"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Documents/builds/gitExercise"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

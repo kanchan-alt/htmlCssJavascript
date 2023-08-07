@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.image{
+    width: 40.8%;  
+}
+/*part-2 navbar */
+.nav{
+  position: relative;  
+  bottom: 49em;
+  left:0;
+  width: 90%;
+  margin: auto;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+    object-fit: contain;
+    height: 3em;
+}
+/* .line-items{
+    border: 1px solid red;
+} */
+
+.items{
+    list-style: none;
+    display: flex;
+}
+
+.line::before{
+    position: absolute;
+    top: 22px;
+    left: 34em;
+    content: "";
+    width: 22%;
+    border: 1px solid black;
+}
+
+.items li{
+    margin: 0 1.3em;
+}
+
+.item{
+    text-decoration: none;
+    font-size: 2.3vmin;
+    color: black;
+    font-family: 'Poppins';
+}
+.item:hover{
+    color: grey;
+}
+
+/* part-3 */
+.craetive-section{
+    width: 55%;
+    height: 70%;
+    margin: auto;
+    /* background: yellowgreen; */
+    position: relative;
+    left:19em ;
+    bottom: 49em;
+}
+.stroke{
+    font-size: 6.5em;
+    font-family: 'Merriweather',Poppins;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.8px;
+
+}
+
+.non-stroke{
+    position:absolute;
+    top: 1.3em;
+    left: 1.3em;
+    font-size: 5.7em;
+    font-family: 'Merriweather',Poppins;
+    color: rgb(61, 60, 60);
+  
+
+}
+.circle{
+    position: absolute;
+    top: 12em;
+    left: 22.5em;
+    width: 0.8%;
+    height: 0.8%;
+    border-radius: 50%;
+    border: 8px solid rgb(61, 60, 60);
+}
+.circle-right{
+    position: absolute;
+    top: 7em;
+    left: 18em;
+    font-size: 1.4em;
+    font-weight:lighter;
+    color: grey;
+    font-family: Poppins;
+    line-height: 1.2em;
+    
+    
+}
+.social-network img{
+    margin: 1em;
+}
+
+.social-network{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 42em;
+    top: 1em;
+}
+
+.btn{
+    position: absolute;
+    top: 19em;
+    left: 30em;
+    border: none;
+    color: white;
+    background: rgb(61, 60, 60);
+    padding: 1em 7.5em;
+ 
+}
+/* last-one section */
+.last-one{
+    position: relative;
+    bottom: 36em;
+    left: 18em;
+    /* background: greenyellow; */
+    width: 55%;
+    margin: auto;
+    height:380px;
+    display: flex;
+}
+/* last-one-left section */
+.last-One-left{
+    position: relative;
+    bottom: 2em;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 300px;
+   margin-top: 2em;
+}
+
+.vertical-line{
+    position: absolute;
+    left: 1.4em;
+    top: 1.4em;
+    border-left:1.3px solid black ;
+    height: 280px;
+    opacity: 0.1;
+}
+.progres{
+    position: relative;
+    left: 1em;
+    top:1.1em;
+    display: flex;  
+}
+.progres1{
+    position: relative;
+    left: 1em;
+    top:3em;
+    display: flex; 
+    opacity: 0.4;
+}
+.progres2{
+    position: relative;
+    left: 1em;
+    top:5em;
+    display: flex; 
+    opacity: 0.4;
+}
+.progres3{
+    position: relative;
+    left: 1em;
+    top:7em;
+    display: flex; 
+    opacity: 0.4;
+}
+.progres4{
+    position: relative;
+    left: 1em;
+    top:9.3em;
+    display: flex; 
+    opacity: 0.4;
+}
+
+ .multi-circle{
+    position: absolute;
+    bottom: 1.2em;
+    width: 0.4%;
+    height: 0.4%;
+    border-radius: 50%;
+    border: 6.5px solid rgb(61, 60, 60);
+    z-index: -1;
+   
+
+
+} 
+.progress-name{
+    margin-bottom:0.7em ;
+    margin-left: 1.7em;
+    font-size: 1em;
+    font-family: Poppins;
+   
+}
+.middle-part{
+    /* border: 1px solid red; */
+    width: 65%;
+    margin: auto;
+   
+}
+.down-arrow{
+    position: absolute;
+    top: 7em;
+    right: 2.6em;
+    height: 4em;
+    opacity: 0.5;
+ 
+}
+
+.middle-part h4{
+    font-family: Poppins;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+
+
+
+

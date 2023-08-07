@@ -1,0 +1,1013 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    /* background: #f5f5f5; */
+}
+/* 1.header section */
+header{
+    background: #636e79;
+    height: 720px;
+}
+nav{
+    width: 87%;
+    margin: auto;
+}
+
+.navBox{
+    border: 1px solid red;
+    padding:2.5em 0em 0em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo{
+    object-fit: contain;
+    height: 2.5em;
+}
+/* Navigation items */
+.list{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    margin: 0em 1em;
+}
+.nav-items{
+    list-style: none;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+}
+
+
+.nav-items li{
+    margin:0 1.7em;
+}
+.nav-item{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.nav-btn{
+    border:1.5px solid grey;
+    background: transparent;
+    color: white;
+    padding: 0.6em 2.5em;
+    font-size: 1.1em;
+}
+
+.nav-menu-icons{
+    display:none;
+    color: #f5f5f5;;
+   
+}
+
+/*  Header information */
+
+.header-info{
+    border: 1px solid red;
+    width: 80%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.header-info-left{
+    border: 2px solid green;
+    width: 44%;
+   
+
+}
+.header-image{
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+     
+}
+
+.header-info-right{
+   border: 3px solid green;
+   width: 56%;
+   margin: 3em 5em;
+
+}
+.header-info-right h1{
+    color: white;
+    font-size: 6.9vmin;
+    font-weight: 500;
+    line-height: 1.1em;
+    width: 95%;
+   
+    
+}
+
+.header-info-right h3{
+    width: 92%;
+    color: rgb(177, 172, 172);
+    font-size: 2.1vmin;
+    font-weight: 200;
+    line-height: 1.5em;
+    margin: 1.4em 0 ;
+
+}
+
+.email{
+    padding: 0 0.5em;
+    border:none;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    background: white;
+}
+.email-left{
+    border: 1px solid red;
+    width: 65%;
+}
+.email img{
+    margin-top: 1px;
+    margin-right: 8px;
+
+}
+
+.email input{
+    border: none;
+
+}
+
+.email input::placeholder{
+    color: grey;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.email button{
+    border: none;
+    background: green;
+    color: white;
+    padding: 0.8em 3.2em;
+    opacity: 0.4;
+    font-size: 0.9em;
+ 
+}
+/* 2nd part -bussiness with your target section*/
+
+.team{
+   border: 1px solid red;
+    width: 77.5%;
+    margin:4em auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.team h1{
+    border: 1px solid green;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.teamTitle{
+    border: 1px solid blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.teamDetail{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.teamDetail h3{
+    margin-top: 0.8em;
+    font-size: 1em;
+    font-weight: 500;
+    color: #3c3f41;
+}
+
+.teamImage{
+    margin: 3em 0;
+    background-image: url('images/pexels-fauxels-3184325.jpg');
+    background-size: cover;
+    height: 490px;
+    background-position:30% 5%;
+}
+
+/* 3nd part-courseInformatiom section */
+
+.courseInformations{
+    /* background: aquamarine; */
+    width: 77.5%;
+    margin: auto;
+}
+/* courseInformatiom section -Heading */
+.courseInformations h1{
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+/* courseInformatiom section -Contents */
+.courseInformation{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.8em 3em;
+ 
+
+}
+
+
+/*courseInformatiom section -Contents left part  */
+.courseDetail{
+    /* border: 1px solid red; */
+    width: 500px;
+    height: 300px;
+    margin-top: 4em;
+
+}
+
+.courseDetail h2{
+    font-size: 5vmin;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.courseDetail p{
+    color: #5f5f60;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 2em 0;
+}
+
+.common-btn{
+    color: white;
+    background: green;
+    border: none;
+    padding: 1em 2.7em;
+    opacity: 0.6;
+    margin-top: 1em;
+}
+
+/*courseInformatiom section -Contents right part  */
+
+.courseMentor{
+    background: url('images/pexels-fauxels-3184405.jpg');
+    width: 370px;
+    height: 420px;
+    background-size: cover;
+    background-position: right;
+}
+
+
+
+/* courseInformatiom section 3.2part  */
+.courseMentorReverse{
+    background: url('images/pexels-fauxels-3184603.jpg');
+    width: 370px;
+    height: 420px;
+    background-size: cover;
+    background-position: top right;
+
+}
+/* courseInformatiom section 3.3part  */
+
+.courseMentor1{
+    background: url('images/pexels-linkedin-sales-navigator-2182969.jpg');
+    width: 370px;
+    height: 420px;
+    background-size: cover;
+    background-position:2%;
+
+}
+
+
+/* 4nd part course-leader  */
+
+.courseLeaderInfos{
+    /* background: aqua; */
+    width: 77.5%;
+    margin: 7em auto;
+}
+
+.headingContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5em;
+ 
+}
+
+.headingContent .heading h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5vmin;
+    font-weight: 500;
+   
+
+}
+
+.headingContent .content p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.9vmin;
+    font-weight: 100;
+    color: #39393b;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    margin-bottom:0.8em;
+
+}
+/* 4nd part course-leader-info part2  */ 
+
+.leaderInformations{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em 0;
+}
+
+.leaderInformationImage1{
+    background-image: url('images/pexels-mikhail-nilov-8937870.jpg');
+    width: 330px;
+    height: 350px;
+    background-size: cover;
+  
+}
+
+.leaderInformationImage2{
+    background-image: url('images/pexels-precious-judah-9154594.jpg');
+    width: 330px;
+    height: 350px;
+    background-size: cover;
+    background-position: 10% 36%;
+  
+}
+
+.leaderInformationImage3{
+    background-image: url('images/pexels-christina-morillo-1181424.jpg');
+    width: 330px;
+    height: 350px;
+    background-size: cover;
+    background-position: 10% 36%;
+  
+}
+
+.leaderInformationName h3{
+    font-size: 2.6vmin;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.6em 0;
+
+}
+.leaderInformationContent p{
+    font-size: 1.9vmin;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #3c3f41;
+
+}
+
+/* 4nd part course-leader-button part3  */
+
+.courseLeaderBtn{
+    text-align: center;
+    opacity: 0.7;
+}
+
+/* 5th part-footer section  */
+
+footer{
+   
+    background-color: rgb(35, 35, 40);
+    width: 100%;
+    height: 343px;
+   
+}
+
+
+
+    .content{
+        max-width: 1250px;
+        margin: auto;
+        padding: 30px 40px 30px 40px;
+    }
+
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+
+    .logo-details{
+        color: white;
+        font-size: 30px;
+    }
+
+    .logo_name img{
+       object-fit: contain;
+       height: 1.5em;
+    }
+
+
+    .media-icons{
+        display: flex;
+        margin-right: 2.3em;
+    
+    }
+
+    .media-icons a{
+        content: "";
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        color: #fff;
+        margin: 0 6px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 17px;
+        text-decoration: none;
+        /* background-color: red; */
+        transition: all 0.4s ease;
+       
+    }
+
+    .top .media-icons a:nth-child(1){
+        background: white;
+        padding: 0.5em;
+    
+    }
+    
+     .media-icons a:nth-child(1):hover{
+        background: #4267B2;
+        
+    }
+    
+    .media-icons a:nth-child(2){
+        background: white;
+        padding: 0.5em;
+    
+    }
+    .media-icons a:nth-child(2):hover{
+        background: #1da1f2;
+        
+    }
+    .media-icons a:nth-child(3){
+        background: white;
+    
+    }
+    .media-icons a:nth-child(4){
+        background: white;;
+        padding: 0.5em;
+    
+    }
+    .media-icons a:nth-child(3):hover{
+        background: rgb(157, 35, 56);
+        
+    }
+    .media-icons a:nth-child(4):hover{
+        background:#4267B2;
+        
+    }
+
+    .line{
+        border: 0.7px solid grey;
+        margin-bottom: 1.5em;
+       
+    }
+    
+
+    .link-boxes{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .box{
+        /* background: red; */
+        width: calc(100%/5 - 10px);
+    }
+
+
+.link_name{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8vmin;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+
+
+.box li {
+    margin: 9px 0;
+    list-style: none;
+}
+
+.box li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.9vmin;
+    font-weight: 400;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+
+}
+
+.box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+
+}
+.input-box{
+    margin-right: 20px;
+}
+
+@media (min-width:1025px) and (max-width:1200px){
+    
+    nav{
+        width: 90%;
+        margin: auto;
+    }
+    .logo{
+        height: 2.3em;
+    }
+    .nav-items li{
+        margin:0 1.2em;
+    }
+    .nav-item{
+        font-size: 1.2em;
+    }
+    
+    .nav-btn{
+        padding: 0.6em 2em;
+        font-size: 1.1em;
+    }
+
+
+ /*  Header information */
+
+.header-info{
+    border: 1px solid red;
+    width: 85%;
+    margin: 4em auto;
+   
+}
+
+.header-image{
+    height: 57vh;
+     
+}
+
+.header-info-right{
+   border: 3px solid green;
+   width: 56%;
+   margin: 3em 3.6em;
+
+}
+.header-info-right h1{
+    font-size: 6.3vmin;
+  
+}
+
+.header-info-right h3{
+    width: 94%;
+    font-size: 2vmin;
+    margin: 1.6em 0 ;
+
+}
+
+.email{
+    padding: 0 0.5em;
+    border:none;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    background: white;
+}
+.email-left{
+    border: 1px solid red;
+    width: 65%;
+}
+.email img{
+    margin-top: 1px;
+    margin-right: 8px;
+
+}
+
+.email input{
+    border: none;
+
+}
+.email-left img{
+    width: 7%;
+}
+
+.email input::placeholder{
+    color: grey;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+
+.email button{
+    padding: 1.4em 3em;
+    opacity: 0.4;
+    font-size: 0.7em;
+ 
+}
+/* 2.section bussiness with your target  */
+
+.team h1{
+    border: 1px solid green;
+    width: 60%;
+    margin: auto;
+}
+
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+.nav-items{
+    display: none;
+
+}
+.nav-btn{
+    display: none;
+}
+.nav-menu-icons{
+    display: block;
+    font-size: 1.2em;
+    
+}
+
+ /*  Header information */
+
+.header-info{
+    border: 1px solid red;
+    width: 88%;
+    margin: 0.5em auto;
+   
+}
+
+.header-info-left{
+    width: 50%;
+}
+
+.header-image{
+    height: 60vh;
+     
+}
+
+.header-info-right{
+   border: 3px solid green;
+   width: 50%;
+   margin: 2.5em 3em;
+
+}
+.header-info-right h1{
+    font-size: 5.7vmin;
+    width: 100%;
+  
+}
+
+.header-info-right h3{
+    width: 100%;
+    font-size: 1.8vmin;
+    margin: 1.3em 0 ;
+
+}
+
+.email{
+    height: 13%;
+    width: 96%;
+}
+
+.email-left{
+    width: 80%;
+}
+
+.email img{
+    margin-top: 7px;
+    margin-right: 1px;
+
+}
+
+.email input{
+    border: none;
+    font-size: 0.8em;
+
+}
+.email-left img{
+    width: 7%;
+}
+
+
+.email button{
+    padding: 0.5em 2.8em;
+    opacity: 0.4;
+    font-size: 0.7em;
+ 
+}
+
+/* 2.section bussiness with your target  */
+
+.team h1{
+    border: 1px solid green;
+    font-size: 4.6vmin;
+    width: 75%;
+    margin: auto;
+}
+
+
+}
+
+@media (min-width:481px) and (max-width:768px){
+
+ header{
+    height: 785px;
+ }
+
+.header-info{
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+       
+}
+
+.nav-items{
+    display: none;
+
+ }
+
+.nav-btn{
+    display: none;
+ }
+
+ .logo{
+    height: 5.6vmin;
+}
+
+.nav-menu-icons{
+    display: block;
+    font-size: 1.1em;
+}
+
+/*  Header information */
+
+.header-info{
+    border: 1px solid red;
+    width: 87%;
+    margin:auto;
+   
+}
+
+.header-info-left{
+    width: 100%;
+}
+
+.header-image{
+    height: 40vh;
+     
+}
+
+
+.header-info-right{
+   border: 3px solid green;
+   width: 100%;
+   margin: 1.4em 0em;
+
+}
+.header-info-right h1{
+    font-size: 6vmin;
+    width: 90%;
+  
+}
+
+.header-info-right h3{
+    width: 90%;
+    font-size: 2.5vmin;
+    margin: 1.3em 0 ;
+
+}
+
+.email{
+    height: 13%;
+    width: 82%;
+    padding: 0.3em;
+}
+
+.email-left{
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.email img{
+    /* margin-top: 7px; */
+    margin-right: 5px;
+
+}
+
+.email input{
+    border: none;
+    font-size: 0.9em;
+
+}
+.email-left img{
+    width: 7%;
+}
+
+
+.email button{
+    padding: 0.5em 2.9em;
+    font-size: 0.9em;
+ 
+}
+
+/* 2.section bussiness with your target  */
+
+.team{
+    border: 1px solid red;
+     width: 89%;
+ }
+
+.team h1{
+    border: 1px solid green;
+    font-size: 4.6vmin;
+    width: 75%;
+    margin: auto;
+}
+
+.teamDetail h2{
+    margin-top: 0.8em;
+    font-size: 1.2em;
+    
+}
+
+.teamDetail h3{
+    margin-top: 0.8em;
+    font-size: 1em;
+}
+
+
+}
+
+@media (min-width:320px) and (max-width:481px){
+
+header{
+    height: 650px;
+}
+
+.nav-items{
+        display: none;
+
+ }
+
+.nav-btn{
+    display: none;
+}
+.logo{
+    height: 7.4vmin;
+}
+
+.nav-menu-icons{
+    display: block;
+    font-size:0.9em;
+}
+
+.header-info{
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+        
+}
+
+ /*  Header information */
+
+.header-info{
+    border: 1px solid red;
+    width: 87%;
+    margin: 0em auto 2em;
+   
+}
+
+.header-info-left{
+    width: 100%;
+}
+
+.header-image{
+    height: 30vh;
+     
+}
+
+
+.header-info-right{
+   border: 3px solid green;
+   width: 100%;
+   margin: 1.8em 0em;
+
+}
+.header-info-right h1{
+    font-size: 7.5vmin;
+    width: 100%;
+  
+}
+
+.header-info-right h3{
+    width: 100%;
+    font-size: 3vmin;
+    margin: 1.5em 0 ;
+
+}
+
+.email{
+    height: 12%;
+    width: 85%;
+    padding: 0.1em;
+}
+
+.email-left{
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.email img{
+    /* margin-top: 7px; */
+    margin-right: 5px;
+
+}
+
+.email input{
+    border: none;
+    font-size: 0.8em;
+
+}
+.email-left img{
+    width: 7%;
+}
+
+
+.email button{
+    padding: 0.5em 2.7em;
+    font-size: 0.8em;
+ 
+}
+
+/* 2.section bussiness with your target  */
+
+.team{
+    border: 1px solid red;
+     width: 83%;
+ }
+
+.team h1{
+    border: 1px solid green;
+    font-size: 4.6vmin;
+    width: 75%;
+    margin: auto;
+    margin-bottom: -1em;
+}
+
+.teamDetail h2{
+    margin-top: 0.8em;
+    font-size: 1em;
+    
+}
+
+.teamDetail h3{
+    margin-top: 0.8em;
+    font-size: 0.9em;
+}
+
+.teamImage{
+    margin: 1em 0;
+    background-image: url('images/pexels-fauxels-3184325.jpg');
+    background-size: cover;
+    background-position:left top;
+    height: 330px;
+}
+
+}
+
+
+

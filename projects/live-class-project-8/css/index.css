@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    }
+
+body{
+  
+    background-image: url('../images/backcover.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+}
+
+  
+
+.main-div{
+   height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+}
+
+nav img{
+    object-fit: contain;
+    height: 6vmin;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item{
+    margin: 0 1em;
+    padding: 0.3em;
+    font-size: 1.2em;
+    color: rgb(72, 7, 133);
+
+}
+.signin-btn{
+    border: none;
+    border-radius: 20px;
+    padding: 0.5em 2.5em;
+    color: whitesmoke;
+    background:linear-gradient(90deg, #8f2ef0, #d66eae);
+    font-size: 1em;
+   
+}
+
+.intro-section{
+    display: flex;
+    height: calc(100vh - 13vh);
+
+    
+}
+
+.left-section{
+    padding: 5em 7em;
+    line-height: 2em;
+    text-align: start;
+
+}
+.left-section h1{
+    font-size: 7.5vmin;
+    color: rgba(18, 4, 95, 0.785);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    line-height: 1em;
+
+}
+
+.left-section h4{
+    font-size: 2.1vmin;
+    color: rgba(16, 10, 45, 0.785);
+     opacity: 0.6;  
+}
+
+.learn-more-btn{
+    margin-top: 3em;
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    background:linear-gradient(90deg, #8f2ef0, #d66eae);
+    padding: 0.7em 2.8em;
+    font-size: 1.1em;
+}
+
+
+.imgs-div{
+    position: relative;
+    
+}
+.vector-img{
+    object-fit: contain;
+    position: absolute;
+    bottom: 10em;
+    right: 45em;
+   
+}
+.vector-dot{
+    object-fit: contain;
+    position: absolute;
+    bottom: 15em;
+    right:46em;
+}
+
+.imgs-div .pic{
+    height: 80vmin;
+}
+
+
+/* media query */
+
+@media (min-width: 870px) and (max-width: 1142px) {
+
+
+    .intro-section{
+     display: block;
+    }
+
+    .left-section{
+        text-align: center;
+    }
+
+    .left-section h1{
+        font-size: 7.5vmin;
+        
+    
+    }
+    
+    .left-section h4{
+        font-size: 2.7vmin;
+        
+    }
+
+    .imgs-div{
+        margin-top: 3em;
+        text-align: center;
+        
+    }
+   
+  }
+
+  @media (min-width: 481px) and (max-width: 870px) {
+
+    nav img{
+       margin-right: 12em;
+    }
+    .nav-items{
+        display:none;
+
+    }
+    .signin-btn{
+        padding: 0.7em 3em;
+    }
+    .intro-section{
+        display: block;
+    }
+
+    .left-section h1{
+        font-size: 7.5vmin;
+        
+    
+    }
+    
+    .left-section h4{
+        font-size: 2.7vmin;
+        
+    }
+
+
+
+    .learn-more-btn{
+        
+        padding: 0.8em 3em;
+        font-size: 1.2em;
+    }
+   
+       .left-section{
+           text-align: center;
+       }
+   
+       .imgs-div{
+           margin-top: 3em;
+           text-align: center;
+           
+       }
+
+  }
+

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Indie Flower;
+}
+table{
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 700;
+     margin: 10px;
+}
+
+hr{
+    border-top: 3px solid black;
+}
+
+#myTable{
+  
+    margin: 10px;
+    height: 300px;
+    width:300px;
+    border: 1px solid whitesmoke;
+    position: relative;
+}
+
+#myTitle{
+    color: red;
+    border: 1px solid whitesmoke;
+    background: aquamarine;
+    text-align: center;
+    font-size: 21px;
+}
+th{
+    background:aquamarine ;
+    width: 15%;
+    height: 12%;
+    color: red;
+    font-size: 18px;
+}
+td{
+    background:aquamarine ;
+    text-align: center;
+    font-size: medium;
+
+}
+
+/* caption{
+    position: absolute;
+    left: 0px;
+    bottom: -28px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: 300;
+} */
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+td {
+    text-align: center;
+}
+
+
+ tr:nth-child(3) td:nth-child(4) {
+    background-color:rgb(137, 134, 160);
+  
+  }

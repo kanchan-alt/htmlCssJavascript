@@ -1,0 +1,1261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    background-color: f5f5f5;
+    height: 100vh;
+    width: 100%;
+}
+/* nav{
+    border: 3px solid green;
+} */
+
+.navbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    margin: 3em auto 0;
+}
+
+.logo{
+    object-fit: contain;
+    height:2.7em;
+}
+
+.navUl{
+    list-style: none;
+    display: flex;
+}
+
+.navLi{
+ margin: 0 1em;
+}
+
+.navA{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.1em;
+}
+
+.navA:hover{
+    color: black;
+}
+
+.btn{
+    border: 1.8px solid rgb(10, 147, 239);
+    padding: 0.4em 1.1em;
+    color: rgb(10, 147, 239);
+    border-radius: 0.6em;
+}
+
+.nav-menu-icons{
+    display: none;
+}
+
+/* 2.main-information section  */
+
+.informations{
+    width: 86%;
+    margin: auto;
+}
+
+.information{
+    display: flex;
+    margin-bottom: 6em;
+    margin-top: 3em;
+    width: 100%;
+}
+
+.imageInformation{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.textInformation{
+    width: 50%;
+    padding: 4em 0;
+}
+
+.textInformation h1{
+    font-size: 2.4em;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+    width: 71%;
+
+}
+
+.textInformation p {
+    font-size: 1em;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 2em;
+ 
+}
+
+.textInformation button {
+    color: white;
+    background:linear-gradient(180deg,rgb(8, 177, 246), rgb(5, 103, 235) );
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.8em 2.5em;
+}
+
+.diff-btn{
+    font-size: 1.1em;
+
+}
+
+.textthirdInfo{
+   padding: 8em 0;
+}
+
+.imageInformation1{
+    width: 82%;
+    object-fit: contain;
+}
+
+.imageInformation2{
+    width: 89%;
+    object-fit: contain;
+}
+
+.imageInformation3{
+    width: 85%;
+    object-fit: contain;
+}
+
+/* section-3 service Provide */
+
+.services{
+    width: 86%;
+    margin: auto;
+}
+
+.serviceInformation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serviceheading{
+    width: 50%; 
+}
+
+.serviceheading h1{
+    width: 70%;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.serviceparagraph{
+    width: 50%;
+}
+.serviceparagraph p{
+    font-size: 0.9em;
+    font-weight: 200;
+    color: gray;
+    width: 87%;
+    line-height: 1.6em;
+
+}
+/* services */
+
+.servicesCard{
+    margin: 4em 0;
+}
+
+.cardsRow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    height: 230px;
+    width: 357px;
+    margin: 1em;
+}
+
+.card h5{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.card p{
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 0.7em;
+}
+
+/*4.price section */
+.priceSection{
+    background:linear-gradient(180deg,rgb(8, 177, 246), rgb(5, 103, 235) );
+}
+
+.priceSectionBox{
+  width: 85%;
+  margin: auto;
+  padding: 3em 0;
+}
+
+.priceSectionBoxTitle{
+    color:white;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight:lighter;
+}
+
+.priceSectionBoxCards{
+    display: flex;
+    margin: 3em 0;
+}
+
+.priceSectionBoxCard{
+    width: 24%;
+    height: 100%;
+    margin: auto;
+    border-radius: 0.9em;
+    background-color: #f5f5f5;
+}
+
+.priceSectionBoxCardsTop{
+    border-radius: 0.9em;
+    padding:2em 1.3em;
+}
+
+.priceSectionBoxCardsTop:hover{
+    background-color: rgb(60, 57, 57);
+    color: #f5f5f5;
+}
+
+.priceSectionBoxCardsTop h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+}
+.priceSectionBoxCardsTop h6{
+    font-size: 0.9em;
+    color: rgb(184, 184, 184);
+    font-weight: 100;
+}
+
+.priceSectionBoxCardMiddle{
+    margin: 0.3em 0;
+}
+
+.priceSectionBoxCardMiddleC{
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    padding: 0.8em;
+}
+.priceSectionBoxCardMiddleC img{
+    width: 10%;
+    margin: 0 0.6em;
+}
+.priceSectionBoxCardMiddleC h6{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.priceSectionBoxCardBottom{
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.priceSectionBoxCardBottom h1{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.priceSectionBoxCardBottom h1 span{
+    color: rgb(100, 96, 96);
+}
+
+.priceSectionBoxCardBottom h6{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(100, 96, 96);
+    margin: 1em 0;
+}
+
+.priceSectionBoxCardBottom button{
+    border: 1px solid blue;
+    border-radius: 0.3em;
+    color:blue ;
+    padding: 0.5em 2.3em;
+    font-size: 0.9em;
+    font-weight: 200;
+
+}
+.priceSectionBoxCardBottom button:hover{
+    background:linear-gradient(180deg,rgb(8, 177, 246), rgb(5, 103, 235) ); 
+    color: #f5f5f5;
+}
+
+/* 5.customer rating  */
+
+.CustomerInfo{
+  width: 86%;
+  margin: 3em auto;
+}
+
+/* .Customer{
+    border: 4px solid pink;
+} */
+
+.CustomerHeading{
+    text-align: center;
+    padding: 2em 0;
+}
+.CustomerHeading h3{
+    font-size:2.4em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+.CustomerHeading p{
+    font-size: 1em;
+    color: gray;
+    width: 80%;
+    margin: auto;
+}
+
+/* customerCardinfo */
+.customerCardinfo{
+    margin: 2em 0;
+}
+
+
+.customerCards{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+}
+
+.customerCard{
+    border-radius: 0.6em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 1.6em;
+    padding: 2.6em 1.5em;
+    background: #f5f5f5;
+    transition: all 0.3s;
+}
+.customerCard:hover{
+    background: white;
+}
+.cardContext p{
+    font-size: 1em;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 1em;
+}
+.cardcontact{
+    display: flex;
+    align-items: center;
+}
+
+.cardCircle{
+    width: 55px;
+    height:55px;
+    border-radius: 50%;
+    background: rgb(214, 208, 208);
+    margin-right: 1em;
+}
+.cardCustomer h5{
+    font-size: 1em;
+    font-weight: 500;
+
+}
+.cardCustomer h6{
+    font-size: 0.8em;
+    font-size: 100;
+
+}
+
+/* 6.Register-section */
+.Register{
+    background:linear-gradient(180deg,rgb(8, 177, 246), rgb(5, 103, 235) );
+    width: 100%;
+    height: 320px;
+}
+.registerinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 3.5em;
+}
+.registerContext h2{
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 0.4em;
+}
+.registerContext p{
+    color: rgb(213, 206, 206);
+    font-size: 1em;
+}
+.registerbtn{
+    border:1px solid white;
+    background: transparent;
+    color: whitesmoke;
+    border-radius: 0.3em;
+    padding: 0.5em 2.9em;
+    
+}
+
+ /* 7.footer -section */
+
+ footer{
+    width: 90%;
+    margin: 4em auto;
+    height: 300px;
+   
+}
+
+.link-boxes{
+   display: flex;
+   justify-content: space-between;
+}
+
+.box-block1{
+    width: 30%;
+    padding-top: 2em;
+
+}
+
+
+.box-block2{
+    width: 70%; 
+}
+
+.box-block1-left{
+    list-style: none;
+}
+
+.logo-2{
+    object-fit: contain;
+    height: 2.5em;
+    margin-bottom: 1em;
+}
+
+.logo-pargraph{
+    font-size: 1em;
+    color: grey;
+    width: 90%;
+}
+
+.box-block2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.box{
+    list-style: none;
+}
+.link_name{
+    font-size: 1.2em;
+    font-weight: 500;
+    
+}
+.box li{
+    margin: 1.5em 0;
+}
+
+.box li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.social{
+    object-fit: contain;
+    height: 2.8em;
+    margin-right: 0.7em;
+   }
+
+/* media query */
+
+@media (min-width:1025px) and (max-width: 1200px){
+    .navbox{
+        width: 92%;
+    }
+
+    .logo{
+        height:2.5em;
+    }
+
+       
+    .navA{
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+       
+       
+    .btn{
+        padding: 0.4em 0.9em;
+       
+    }
+    /* 2.main-information section  */
+    .informations{
+        width: 91.5%;
+        margin: auto;
+       
+    }
+
+    .textInformation{
+        padding: 3em 0;
+    }
+
+    .textthirdInfo{
+        padding: 3em 0;
+    } 
+
+    .textInformation h1{
+        font-size: 2.1em;
+        width: 80%;
+    
+    }
+    
+    .textInformation p {
+        font-size: 1em;
+        font-weight: 300;
+       
+    }
+
+    /* section-3 service Provide */
+    .services{
+        width: 91.5%;
+        margin: auto;
+    }
+
+    .serviceheading h1{
+        font-size: 1.9em;
+       
+    }
+    
+    .serviceparagraph p{
+        font-size: 0.9em;
+        width: 92%;
+
+    }
+     /*4.price section */
+
+     .priceSectionBox{
+        width: 87%;
+        margin: auto;
+        padding: 3em 0;
+      }
+
+     .priceSectionBoxCard{
+        width: 25%;
+        height: 100%;
+        margin: auto;
+        border-radius: 0.9em;
+        background-color: #f5f5f5;
+    }
+
+     /* 5.customer rating  */
+
+    .CustomerInfo{
+        width: 90%;
+        margin: 3em auto;
+    }
+    
+    .CustomerHeading{
+        text-align: center;
+        padding: 2em 0;
+    }
+    .CustomerHeading h3{
+        font-size:2.4em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+    .CustomerHeading p{
+        font-size: 1em;
+        color: gray;
+    }
+
+    
+
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+    .navbox{
+        width: 92%;
+    }
+
+    .logo{
+        height:2.5em;
+    }
+    .navUl{
+        display: none;
+    }
+
+    .nav-menu-icons{
+        display: block;
+    }
+
+    /* 2.main-information section  */
+    .informations{
+        width: 91.5%;
+        margin: auto;
+       
+    }
+
+
+    .textInformation{
+        padding: 3em 0;
+    }
+
+    .textthirdInfo{
+        padding: 3em 0;
+    } 
+
+    .textInformation h1{
+        font-size: 2em;
+        width: 87%;
+    
+    }
+    
+    .textInformation p {
+        font-size: 1em;
+        font-weight: 300;
+       
+    }
+    /* section-3 service Provide */
+    .services{
+        width: 91.5%;
+        margin: auto;
+    }
+    .serviceheading h1{
+        font-size: 1.7em;
+        width:79%;
+       
+    }
+    
+    .serviceparagraph p{
+        font-size: 0.8em;
+        width: 92%;
+        line-height: 1.4em;
+
+    }
+
+    /*4.price section */
+
+    .priceSectionBox{
+        width: 96%;
+        margin: auto;
+        padding: 3em 0;
+      }
+
+     .priceSectionBoxCard{
+        width: 28%;
+        height: 100%;
+        margin: auto;
+        border-radius: 0.9em;
+        background-color: #f5f5f5;
+    }
+
+    .priceSectionBoxTitle{
+        font-size: 1.4em;
+    }
+    
+    .priceSectionBoxCardsTop h3{
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+    .priceSectionBoxCardsTop h6{
+        font-size: 0.9em;
+    }
+    
+    .priceSectionBoxCardMiddleC h6{
+        font-size: 0.8em;
+    }
+    
+    .priceSectionBoxCardBottom h1{
+        font-size: 1.1em;
+    }
+    
+    .priceSectionBoxCardBottom h6{
+        font-size: 0.8em;
+    }
+    
+    .priceSectionBoxCardBottom button{
+        padding: 0.5em 2em;
+        font-size: 0.8em;
+    }
+
+    
+    /* 5.customer rating  */
+
+    .CustomerInfo{
+        width: 90%;
+    }
+    /* card-1234 */
+
+     .customerCards{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .customerCard{
+        margin: 1em;
+        padding: 2.6em 1.5em;
+        
+    }
+
+    .cardContext p{
+        font-size: 0.9em;
+        margin-bottom: 1em;
+    }
+    
+    .cardCircle{
+        width: 50px;
+        height:50px;
+        border-radius: 50%;
+    }
+    .cardCustomer h5{
+        font-size: 0.9em;
+    }
+    .cardCustomer h6{
+        font-size: 0.7em;
+        font-size: 100;
+    
+    }
+
+    /* 6.Register-section */
+    
+    .registerContext h2{
+        color: white;
+        font-size: 2.3em;
+    }
+    .registerContext p{
+        color: rgb(213, 206, 206);
+        font-size: 1em;
+    }
+    .registerbtn{
+        border-radius: 0.3em;
+        padding: 0.5em 3.6em;
+        
+    }
+
+     /* 7.footer -section */
+
+     footer{
+        width: 93%;
+        margin: 3em auto;
+       
+    }
+    
+    
+    .logo-2{
+        object-fit: contain;
+        height: 2.3em;
+    }
+    
+    .logo-pargraph{
+        font-size: 0.9em;
+    }
+    
+    .link_name{
+        font-size: 1.1em;
+        
+    }
+    .box li{
+        margin: 1.3em 0;
+    }
+    .box li a{
+        font-size: 0.9em;
+    }
+    
+    
+    .social{
+        height: 2.5em;
+    
+    }
+      
+    
+}
+
+@media (min-width:481px) and (max-width: 768px){
+
+    .navbox{
+        width: 92%;
+    }
+
+    .logo{
+        height:2.4em;
+    }
+
+    .navUl{
+        display: none;
+    }
+
+    .nav-menu-icons{
+        display:block;
+        font-size: 1.1em;
+    }
+
+    /* 2.main-information section  */
+    .informations{
+        width: 91.5%;
+        margin: auto;
+       
+    }
+
+    .textInformation{
+        padding: 3em 0;
+    }
+
+    .textthirdInfo{
+        padding: 3em 0;
+    } 
+
+    .textInformation h1{
+        font-size: 1.7em;
+        width: 100%;
+    
+    }
+    
+    .textInformation p {
+        font-size: 1em;
+    }
+
+    .imageInformation1{
+        width: 100%;
+       
+    }
+    
+    .imageInformation2{
+        width: 100%;
+        
+    }
+    
+    .imageInformation3{
+        width:100%;
+
+    }
+
+    /* section-3 service Provide */
+    .services{
+        width: 91.5%;
+        margin: auto;
+    }
+
+    .serviceheading h1{
+        font-size: 1.6em;
+        width: 87%;
+    }
+    
+    .serviceparagraph p{
+        font-size: 0.8em;
+        width: 100%;
+        line-height: 1.4em;
+
+    }
+  /* service */
+
+  .card{
+    height: 230px;
+    width: 78%;
+    margin: 1em;
+   }
+   .card p{
+    width: 100%;
+   }
+    .cardsRow{
+      flex-wrap: wrap;
+       
+    }
+
+    /*4.price section */
+
+    .priceSectionBox{
+        width: 90%;
+        margin: auto;
+        padding: 3em 0;
+      }
+
+     .priceSectionBoxCard{
+        width: 52%;
+        height: 100%;
+        margin: 1em auto;
+        border-radius: 0.9em;
+        background-color: #f5f5f5;
+    }
+
+    .priceSectionBoxCards{
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+
+  
+
+
+     /* 5.customer rating  */
+
+     .CustomerInfo{
+        width: 90%;
+    }
+
+    .CustomerHeading h3{
+        font-size:2em;
+        margin-bottom: 0.5em;
+    }
+    .CustomerHeading p{
+        font-size: 0.9em;
+    }
+
+      /* 5.customer rating  */
+
+      .CustomerInfo{
+        width: 90%;
+    }
+
+    /* card-1234 */
+
+    .customerCards{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .customerCard{
+        margin: 1em;
+        padding: 2.6em 1.5em;
+        
+    }
+
+    .cardContext p{
+        font-size: 0.7em;
+
+    }
+    
+    .cardCircle{
+        width: 30px;
+        height:30px;
+        border-radius: 50%;
+    }
+    .cardCustomer h5{
+        font-size: 0.6em;
+    }
+    .cardCustomer h6{
+        font-size: 0.4em;
+       
+    
+    }
+
+    /* 6.Register-section */
+
+    .registerinfo{
+        width: 94%;
+        margin: auto;
+        padding: 5.5em 0;
+    }
+    .registerContext h2{
+        font-size: 1.6em;
+        margin-bottom: 0.4em;
+    }
+    .registerContext p{
+        color: rgb(213, 206, 206);
+        font-size: 0.8em;
+    }
+    .registerbtn{
+        border-radius: 0.3em;
+        padding: 0.5em 2em;
+        
+    }
+
+     /* 7.footer -section */
+     footer{
+        width: 90%;
+        margin: 3em auto;
+        height: 270px;
+       
+    }
+
+    .link-boxes{
+        display:block;
+     }
+     
+     .box-block1{
+         width: 100%;
+     }
+     
+     
+     .box-block2{
+         width: 100%;
+         margin: 2em 0;
+         
+     }
+     .link_name{
+        font-size: 1em;
+     }
+     
+     
+     .logo-pargraph{
+        font-size: 0.9em;
+        width: 100%;
+     }
+
+     .box li{
+        margin: 1em 0;
+     }
+
+     .box li a {
+        font-size: 0.9em;
+     }
+     
+
+
+}
+
+@media (min-width:320px) and (max-width: 480px){
+    .navbox{
+        width: 92%;
+    }
+
+    .logo{
+        height:2.1em;
+    }
+
+    .navUl{
+        display: none;
+    }
+
+    .nav-menu-icons{
+        display:block;
+        font-size: 1em;
+    }
+
+    /* 2.main-information section  */
+    .informations{
+        width: 91.5%;
+        margin: auto;
+       
+    }
+
+    .information{
+        display:block;
+        margin-bottom: 4em;
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    .imageInformation{
+        width: 100%;
+        
+    }
+    
+    .textInformation{
+        width: 100%;
+        padding: 3em 1em;
+    }
+
+    .textInformation h1{
+        font-size: 2.1em;
+        width: 100%;
+    
+    }
+
+    .imageInformation1{
+        width: 98%;
+       
+    }
+    
+    .imageInformation2{
+        width: 100%;
+        
+    }
+    
+    .imageInformation3{
+        width:100%;
+
+    }
+
+    /* section-3 service Provide */
+    .services{
+        width: 91.5%;
+        margin: auto;
+    }
+
+    .serviceInformation{
+        display: block;
+    }
+    
+    .serviceheading{
+        width: 100%;
+    }
+    
+    .serviceheading h1{
+        font-size: 1.6em;
+        width: 100%;
+    }
+    
+    .serviceparagraph{
+        width: 100%;
+    }
+
+    .serviceparagraph p{
+        font-size: 0.8em;
+        width:100%;
+        line-height: 1.5em;
+
+    }
+    /* service */
+    .cardsRow{
+        flex-wrap: wrap;
+         
+      }
+
+    /*4.price section */
+
+
+    .priceSectionBox{
+        width: 90%;
+        margin: auto;
+        padding: 3em 0;
+      }
+
+     .priceSectionBoxCard{
+        width: 68%;
+        height: 100%;
+        margin: 1em auto;
+        border-radius: 0.9em;
+        background-color: #f5f5f5;
+    }
+
+    .priceSectionBoxCards{
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+
+     /* 5.customer rating  */
+
+    .CustomerInfo{
+        width: 90%;
+    }
+
+    .CustomerHeading h3{
+        font-size:1.7em;
+        margin-bottom: 0.5em;
+    }
+    .CustomerHeading p{
+        font-size: 0.8em;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* card-1234 */
+
+    .customerCards{
+       flex-wrap: wrap;
+    }
+
+    .customerCards{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .customerCard{
+        margin: 1em;
+        padding: 2.6em 1.5em;
+        
+    }
+
+    .cardContext p{
+        font-size: 0.8em;
+
+    }
+    
+    .cardCircle{
+        width: 30px;
+        height:30px;
+        border-radius: 50%;
+    }
+    .cardCustomer h5{
+        font-size: 0.8em;
+    }
+    .cardCustomer h6{
+        font-size: 0.6em;
+       
+    
+    }
+
+    /* 6.Register-section */
+
+    .registerinfo{
+        display: block;
+        width: 85%;
+        margin: auto;
+       
+    }
+    .registerContext h2{
+        color: white;
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    .registerContext p{
+        font-size: 0.9em;
+        margin-bottom: 1.5em;
+    }
+    .registerbtn{
+        border:1px solid white;
+        background: transparent;
+        color: whitesmoke;
+        border-radius: 0.3em;
+        padding: 0.5em 3.3em;
+        
+    }
+
+    /* 7.footer -section */
+
+    footer{
+        width: 95%;
+        margin: 3em auto;
+        height: 270px;
+    }
+
+    .link-boxes{
+        display:block;
+     }
+     
+     .box-block1{
+         width: 100%;
+     }
+     
+     
+     .box-block2{
+         border: 1px solid green;
+         width: 100%;
+         margin: 2em 0;
+         flex-wrap: wrap;
+       justify-content: space-around;
+         
+     }
+     .link_name{
+        font-size: 1.1em;
+     }
+     
+     
+     .logo-pargraph{
+        font-size: 0.9em;
+         width: 100%;
+     }
+
+     .box li{
+        margin: 0.6em 0;
+     }
+
+     .box li a {
+        font-size: 0.9em;
+     }
+       
+}

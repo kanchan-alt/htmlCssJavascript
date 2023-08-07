@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    font-family:'Poppins' ;
+    margin: 30px 0px;
+}
+.container{
+    width: 100%;  
+}
+
+.navbar-container{
+   display: flex;
+   padding-right: 40px;
+   justify-content:flex-start;
+   align-items: center;
+   height: 100px;
+}
+.navbar-container div img{
+    height: 50px;
+    object-fit: contain;
+    padding: 0 15px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.grow-list{
+   justify-content: center;
+   align-items: center;
+   margin-right: 300px;
+   
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color:#3a3a3a ;
+    
+}
+.list-item{
+    color: #c4c4c4;
+    padding: 0 30px;
+    display: inline-block;
+    font-size: 19px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.nav-button{
+  padding: 13px 20px;
+  background: #6859a6;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  
+}
+.list-item::after{
+    content:'';
+    display: block;
+    height: 2px;
+    width:0;
+    background: black;
+    transition: all .5s;
+
+}
+
+.list-item:hover::after{
+    width: 100%;
+}
+
+/* Banner */
+
+.banner-container{
+    display: flex;
+    height:calc(100vh - 100px);
+    width: 85%;
+    margin: auto;   
+}
+
+
+/* Left text */
+.left_text{
+   width: 50%;
+   margin-top: 130px;
+
+}
+
+.heading-text{
+    color: #3d3269;
+    font-weight: 600;
+    font-size: 53px;
+    text-transform: uppercase;
+}
+
+.heading-text span {
+    color: #624ac4;
+}
+
+.description{
+    color: #aba3a3;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.5px;
+    margin: 30px 0;
+}
+
+.nav-button .btn{
+    padding: 10px 30px;
+    background: #c4c4f7;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+.right_text{
+    width: 40%;
+}
+
+.right_text img{
+    max-width: 720px;
+    height: auto;
+}
+

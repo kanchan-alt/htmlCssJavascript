@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* font-size: 62.5%; */
+    /* 1rem = 10px */
+    overflow-x: hidden;
+  }
+  
+  body{
+    width: 100%;
+    height: 100vh;
+ 
+}
+
+header{
+    height: 700px;
+    width: 100%;
+    background: rgb(119, 38, 232);
+}
+
+nav{
+    padding: 1.3em;
+  }
+
+
+  .navContain{
+    height: 100px;
+    width: 91%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+   
+  }
+
+  .logo{
+    object-fit: contain;
+    height: 5vmin;
+  }
+
+  .items{
+    display: flex;
+    list-style: none;
+}
+
+.item{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-family: 700;
+    margin: 0 1.3em;
+  
+  }
+
+  .item:hover{
+    color: blue;
+  }
+  
+  
+  .items li{
+    position: relative;
+  }
+
+  .items li::after{
+    position: absolute;
+    left:1.4em;
+    right: 1em;
+    bottom: -10px;
+    content: "";
+    height: 3px;
+    width: 0px;
+    background:purple;
+    transition: all 0.3 ease-in;
+  }
+  .items li:hover::after{
+    
+    width: 71%;
+  }
+
+
+  .item-btn{
+    padding:0.6em 2em;
+    border: none;
+    background: rgb(53, 168, 218);
+    color: whitesmoke;
+    font-size: 1.1em;
+    text-align: center;
+   
+  }
+  
+  .nav-menu-icons{
+    display: none;
+  }
+
+
+  /* main section */
+  main{
+    color: white;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+
+  .main-left-content{
+    width: 50%;
+    padding: 5.5em 0;
+    font-family: "monospace";  
+  }
+
+  .main-left-content h1{
+    font-size: 3.1em;
+    margin-bottom: 0.7em;
+    width: 70%;
+}
+
+.main-left-content p{
+    width: 70%;
+     font-size: 1.2em;
+     color: rgb(188, 188, 194);
+ }
+
+ .saas_image{
+    width: 92%;
+  }
+
+  .main-right-image{
+    display: flex;
+    justify-content: end;
+    width: 50%;  
+  }
+
+  /* 2nd section */
+
+.feacture-infos{
+    width: 90%;
+    margin: auto;
+    height: 570px;
+    display: flex;
+    
+  }
+
+  .feacture-infos-left{
+    width: 50%;
+  }
+
+  .saas_image2{
+    width: 80%;
+    padding-top: 2.5em;
+  }
+
+  .feacture-infos-right{
+    width: 50%;
+    padding-top: 5em;
+  }
+
+  .feacture-infos-right h2{
+    font-size: 2em;
+    width: 70%;
+  }
+
+  .part{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .arrow{
+    height: 1.9em;
+  }
+
+  .part h3 {
+    font-size: 1.4em;
+  }
+
+  .part-p{
+    font-size: 1em;
+    width: 70%;
+    color: rgb(168, 161, 161);
+    margin-top: 1.3em;
+  }
+
+  /* 3rd-section-customer-Information  */
+
+.customer-infos{
+    width: 90%;
+    margin: auto; 
+}
+
+.customer-infos h2{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.customer-cart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.cart{
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+    height: 16em;
+    width: 12em;
+    box-shadow: rgba(0, 0, 0, 0.20) 1.95px 1.95px 2.6px;
+    padding: 2em 0;
+}
+
+.carts-logos{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* border: 1px solid rgb(178, 164, 164); */
+   margin: 0 3.5em;
+   box-shadow: rgba(0, 0, 0, 0.20) 1.95px 1.95px 2.6px;
+}
+
+.cart-logo{
+    object-fit: contain;
+    height: 3em;
+    margin: 1.2em;
+}
+
+.carts-contents{
+    height: 7.3em;
+    border-radius: 1em;
+    border: none;
+    background:rgb(119, 38, 232);
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.carts-contents h5{
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0.9em;
+
+}
+.carts-contents p{
+    font-size: 0.9em;
+    font-weight: 500;
+    
+
+}
+
+
+  
+
+
+/* media query */
+
+@media (min-width:1025px) and (max-width:1200px) {
+  header{
+    height: 650px;
+    width: 100%;
+    background: rgb(119, 38, 232);
+}
+
+  .navContain{
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-size: 3vmin;
+  }
+  .items{
+    display: none;
+  }
+
+  .item-btn{
+    display: none;
+  }
+
+  .nav-menu-icons{
+    display: block;
+    color: whitesmoke;
+    font-size: 1.1em;
+  }
+
+  .main-left-content h1{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+    width: 78%;
+}
+
+.main-left-content p{
+    width: 80%;
+    font-size: 1em;
+    color: rgb(188, 188, 194);
+}
+
+.saas_image{
+  width: 100%;
+}
+/* 2nd section */
+
+.feacture-infos-left{
+  width: 50%;
+ 
+}
+
+.feacture-infos-right{
+  width: 50%;
+}
+.saas_image2{
+  width: 100%;
+  padding-top: 2em;
+}
+
+.feacture-infos-right{
+  padding-top: 3em;
+}
+
+.feacture-infos-right h2{
+    font-size: 1.9em;
+    width: 85%;
+  }
+.part{
+  margin-top: 2.3em;
+}
+.arrow{
+  height: 1.7em;
+}
+.part h3 {
+  font-size: 1.2em;
+}
+.part-p{
+  width: 90%;
+  font-size: 1em;
+}
+
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    header{
+      height: 650px;
+      width: 100%;
+      background: rgb(119, 38, 232);
+  }
+  
+    .navContain{
+      justify-content: space-between;
+    }
+  
+    .logo{
+      font-size: 3vmin;
+    }
+    .items{
+      display: none;
+    }
+  
+    .item-btn{
+      display: none;
+    }
+  
+    .nav-menu-icons{
+      display: block;
+      color: whitesmoke;
+      font-size: 1.3em;
+    }
+  
+    .main-left-content h1{
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 0.7em;
+      width: 90%;
+  }
+  
+  .main-left-content p{
+      width: 82%;
+      font-size: 1em;
+      color: rgb(188, 188, 194);
+  }
+  
+  .saas_image{
+    width: 100%;
+  }
+  
+/* 2nd section */
+
+.feacture-infos-left{
+width: 50%;
+}
+.saas_image2{
+width: 100%;
+margin-top: 2em;
+
+}
+
+.feacture-infos-right{
+width: 50%;
+}
+.feacture-infos-right h2{
+font-size: 1.7em;
+width: 95%;
+}
+
+.part{
+margin-top: 2.1em;
+}
+.arrow{
+height: 1.4em;
+}
+.part h3 {
+font-size: 1.2em;
+}
+.part-p{
+width: 100%;
+font-size: 1em;
+}
+  
+  
+  }
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+ header{
+    height: 1100px;
+    width: 100%;
+    background: rgb(119, 38, 232);
+  }
+  
+.navContain{
+    justify-content: space-between;
+    width: 94%;
+}
+  
+.logo{
+    font-size: 10vmin;
+}
+.items{
+    display: none;
+}
+  
+.item-btn{
+    display: none;
+}
+
+.nav-menu-icons{
+    display: block;
+    color: whitesmoke;
+    font-size: 1.1em;
+}
+  
+/* main-section */
+
+main{
+    display:flex;
+    flex-direction: column;  
+ }
+  
+.main-left-content{
+    width: 100%;
+    padding: 4.5em 0;
+    font-family: "monospace";  
+ }
+  
+.main-left-content h1{
+    font-size: 3em;
+    margin-bottom: 0.7em;
+    width: 85%;
+}
+  
+.main-left-content p{
+    width: 85%;
+    font-size: 1.2em;
+    color: rgb(188, 188, 194);
+}
+  
+.saas_image{
+    width: 92%;
+}
+  
+  
+.main-right-image{
+    display: flex;
+    justify-content:center;
+    width: 100%;  
+}
+  
+/* 2nd-section */
+  
+.feacture-infos{
+    width: 90%;
+    margin: auto;
+    height: 1050px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.feacture-infos-left{
+    width: 100%;
+}
+
+.feacture-infos-right{
+    width: 100%;
+}
+  
+  
+  
+.saas_image2{
+    width: 85%;
+    padding-top: 1em;
+}
+
+  
+.feacture-infos-right{
+    width: 100%;
+    padding: 6em 0;
+}
+
+.feacture-infos-right h2{
+    font-size: 1.8em;
+    width: 97%;
+}
+  
+.part{
+    margin-top: 1.7em;
+}
+
+.arrow{
+    height: 1.8em;
+}
+
+.part h3 {
+    font-size: 1.3em;
+}
+
+.part-p{
+    font-size: 1em;
+    width: 95%;
+    
+}
+
+.cart{
+    margin-bottom: 1.2em;
+}
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+header{
+      height: 850px;
+      width: 100%;
+      background: rgb(119, 38, 232);
+ }
+  
+.navContain{
+      justify-content: space-between;
+      width: 97%;
+ }
+  
+.logo{
+    height: 8vmin;
+}
+
+.items{
+    display: none;
+}
+  
+.item-btn{
+    display: none;
+}
+
+.nav-menu-icons{
+    display: block;
+    color: whitesmoke;
+    font-size: 0.9em;
+ }
+  
+ /* main-section */
+
+main{
+      display:flex;
+      flex-direction: column;
+      
+ }
+  
+.main-left-content{
+      width: 100%;
+      padding: 4em 0;
+      font-family: "monospace";  
+}
+  
+.main-left-content h1{
+      font-size: 2.2em;
+      margin-bottom: 0.7em;
+      width: 85%;
+}
+  
+.main-left-content p{
+      width: 100%;
+      font-size: 1em;
+      color: rgb(188, 188, 194);
+}
+  
+.saas_image{
+    width: 100%;
+}
+  
+  
+.main-right-image{
+    display: flex;
+    justify-content:center;
+    width: 100%;  
+}
+
+/* 2nd-section */
+  
+.feacture-infos{
+    width: 90%;
+    margin: auto;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feacture-infos-left{
+    width: 100%;
+}
+
+.feacture-infos-right{
+    width: 100%;
+}
+
+.saas_image2{
+    width: 85%;
+    padding: 1em;
+}
+
+  
+.feacture-infos-right{
+    width: 100%;
+    padding: 6em 0;
+}
+
+.feacture-infos-right h2{
+    font-size: 1.8em;
+    width: 97%;
+}
+  
+.part{
+    margin-top: 1.7em;
+}
+
+.arrow{
+    height: 1.8em;
+}
+
+.part h3 {
+    font-size: 1.3em;
+ }
+
+.part-p{
+    font-size: 1em;
+    width: 95%; 
+}
+
+  /* 3rd-section-customer-Information   */
+
+.customer-infos h2{
+    font-size: 1.6em;
+}  
+
+.cart{
+    margin: 1em;
+}
+  
+}
+  
+  
+  
+  
+
+  

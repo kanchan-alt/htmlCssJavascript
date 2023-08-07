@@ -1,0 +1,440 @@
+1)why is git is important ?
+
+"it is version control"
+example:- Design.png - DesignFinal.png - DesignFinalV1.png -DesignFinalV2.png
+
+"Git is an open-distributed version control system that allows developers to track changes to their codebase and collaborate on projects with other developers. Git is typically used for software development, but it can be used for any type of file.
+
+When a developer makes a change to a code file, they can commit that change to their local Git repository. Then, they can push their changes to a remote Git repository, such as a server hosted by a company or an open-source project. Other developers can then pull the changes down from the remote repository and incorporate them into their code"
+
+"Git is an open-source project distributed version control system (DVCS). Many commercial projects rely on Git as every developer’s code copy is also treated as a repository, which contains all changes done in the past. Below is the detailed description of DVCS:
+
+Control System: Git is known for its features like a content tracker, and it stores content.
+~
+Version Control System: It helps developers to store code at the same time and Git modifies as and when more codes are added. The version control system helps in maintaining and keeping records of all the changes. Further, it offers features like branches and merges.
+
+Distributed Version Control System: Git has a remote repository and a local repository, which are stored on servers and computers, respectively. This means that code is stored in both the central server and the developer’s computer. Hence it is termed a distributed version control system."
+
+2)A version control system (VCS) records all the changes made to a file or set of data, so a specific version may be called later if needed.
+
+This helps ensure that all team members are working on the latest version of the file
+
+
+3) To provide Internet hosting for version control and software development, GitHub makes use of Git.
+   example:-GitHub, SourceForge, GitLab, Bitbucket
+
+     <-- inatlizied AND EXPLORING GIT--->
+ 4) |------------>|  |----->--------|
+    |             |  | .            |
+local file     staging area        repository
+    |------------------<------------|
+
+    git architecture
+
+
+5)git exercise folder- 01basics folder
+  we inatlizied using command {git init} and then check that file using other command 
+  {ls -la }
+
+     <------FIRST COMMIT AND LOG MESSAGES---->
+     1)git add . or git add fileName 
+     2)git commit -m "mesaage are here"
+     3)git log
+     4) git status 
+     5) git log --author = "name"
+     6)git log --since = 2018-07-14
+     7)git log -n number
+    
+
+ 6)Git Configuration   
+
+<-----------------Git checksum and SHA-1--------->
+https://stackoverflow.com/questions/4964099/what-is-a-git-snapshot
+ 7) SHA-1(algorithm) big string
+ Git Snapshorts:-
+ a checksum is generated with data
+ Data integrity is top priority
+ 40 character SHA-1 [0-9 OR a-f]
+
+ example:-a.txt->.git/object -3 folder inside. 1a,8e,f9.info,pack has one file
+
+ Git Head:-  [46465ad] [23abc2...]
+              [NIL]     [46465ad]
+              [data,parent author, mesaage etc]
+              [snap-1]  [snap-2]
+ Head always pointed to tip of branch
+
+ command used to check for snapshot
+ -------------------------------------
+ cd .git
+ ls
+ ls -la
+ cat Head
+ it show ref:refs/heads/master
+ ------------------------------------
+
+ cd refs/heads/
+ ls -la
+ cat master
+ show:-2dac8c1d.....
+------------------------------------
+
+ <-------Getting into files------>
+ 1) we make a folder name (02new) and checking status using{git status command } it show no a git repository that folder or 
+ any of the parent directories
+ 
+ so we inatlizied it {git init}
+ it is untracked file  so we add to sttaging area by commamnd{git add 01file.txt} then check status than commit it.
+
+ ALWAYS MAKE SENSIABLE MESSAGES IN COMMIT commamnd
+ --------------------------------------------------
+
+
+ 2)TRACK DIFFERENCE BETWEEN FILES
+ MAKE two more file 02file.txt, 03file.txt in 02newfolder without add go to commit 
+ and try to commit using fake commit but it untracked files still bez its not go to staging area.
+
+ git add 02file.txt--- commit msg"second file added"
+
+ 03file.txt -add content
+ my name is klk and then add it and commit msg "third file added"
+ here we know about git diff - for alredy there and +++ for new line or content added."know about diff"
+ and git diff used before commit it show about what changes it does.
+
+ 03)DELETE FROM repository
+ check the status, than 01file.txt add content"and i have added some content in it"
+ 02test.txt add content - " add some video there"
+ both file are in modified stage and 02file.txt add to stagging area
+ than {git diff} it show only modifies in 01 file.txt "keep tracking in modified stag"
+      ----------              --------
+ i want to check in stagging area change {
+    git diff --staged
+    -----------------
+ }
+
+ HOW WE DELETE SOME FILES
+ 04delete.txt,05delete.txt
+" 04,05 delete me too."
+ git status
+ 06delete.txt- directly delete-empty bin also{untracked files}
+ after it tracking if i deleted 05delete.txt file and file are in trash 
+ {git rm  05delete.txt - git status}
+ -----------------------------------
+
+
+ 04)REPO RESET AND UNSTAGGING
+ stuition1:- 02file.txt "and URL is youtube.com/"
+ and i just unknowing delete something then i check status somthing modified i don't understand what changes so,
+ write now it mess my code i want previous version like  in repository so we used this command
+ {git checkout -- 02file.txt}
+ [repository to local]
+
+ stuation2:-03file.txt
+ i forget to link of my website 
+ check status but add to stagging area
+ realised some thing wrong i dont want to commit
+ {git reset HEAD 03file.txt} to modified area then
+ {git checkout -- 03file.txt} whatever change are back again.
+
+
+ 05) CAN WE RESET COMMIT 
+ why we cannot changed what we commit? 
+ git design in two principale
+ 1.divising (vesion controling)
+ 2.data integrity
+
+ exception for last commit(amend)
+ in 03file.txt
+ "my website is learncodeonline" -modified-
+ add- commitwith msg "added link"
+ then git log
+ last commit we should append it 
+ "my website is learncodeonline.in"
+ modified- add- {git commit --amend -m "oopss"}
+ -------------------------------------------
+ change the msg then same command used
+
+ <--------04 Git Snapshorts--------->
+ 01)checkout with previous version             
+    one function - i have added a very important function here.
+    {commit msg- inital commit}
+    Two function - i have added a another very important function here
+    Three function - i have added a very unnecessary function here
+      {commit msg- 2 and 3 function added }
+     New function - new function added.  307c9e0155af
+     Newer function - new function added
+     {commit msg-  new and newer added}
+    {git log} for this commit
+     commit-c3a69c070bc
+     {git checkout c3a69c070bc -- myfunction.txt}
+     git status
+      modified:   myfunction.txt- green color
+      {git diff --staged}
+      {git reset HEAD myfunction.txt}
+
+02) soft,mixed and hard reset
+
+reset mean about lose data
+
+different kinds of reset
+Soft-safe
+Mixed- default
+hard - caution
+
+2.1)Git reset soft:- just points toward another SHA
+head pointer changed from commit head to other commit
+
+loacal files         staging area     [ Repository]
+
+it doesnt change local file and staging area its just point to repository.
+
+2.2)Git reset Mixed:- point towards another SHA and make your staging area a copy of repository
+
+loacal files        [ staging area     Repository]
+
+2.3)Git reset HARD:-points toward another SHA, makes your
+                   staging area a copy of repository and makes your local files exactly same as repository
+   [ loacal files    staging area     Repository  ]    
+
+
+{git reset HEAD~1}    
+
+git reset --hard  commit
+git reset  commit
+
+
+03)Ignoring the files
+ {
+    git clear -n (just for query to delete)
+    git clear -f (delete it)
+ }
+ making two files dump.txt(staging), dump1.txt(untracked)
+ and remeber the point unstage(untracked) area will cleanup not staging area
+
+ create a .gitignore file and add it and commit it
+ msg"git ignore file added" 
+ # using it comment
+ in.gitignore file we put those thing we dont wannt to show like:- *.js ,*!app.js(create),node-module,assests/video,*.mp4 .DS_Store  
+
+ create other.js file 
+
+ after modified .gitignore file we add again and commit msg"learned about gitignore"  
+
+
+04)what is ignore?
+git-scm.com/docs/gitignore(read this)
+
+05)Gitignore will not listen
+firstly we create scenario creating my.php file
+and inside file write this is my php
+add it commit msg "php file added"
+git status 
+every thing is clean
+
+my.php file will de not necessary here so we put in .gitignore file
+then gitignore goes to modified stage
+
+then we add some content in other.js
+  modified:   .gitignore
+it doesnt pop up there but
+ we u add in my.php file it pop up there commited tha
+   modified:   .gitignore
+    modified: my.php
+
+reason bez if we commit it and then put in gitignore it cannot ignore
+firstly we put in gitignore file
+
+{git rm --cached my.php}
+rm 'my.php'
+git status
+deleted my.php -green color
+modified: .gitignore
+
+add and commit that modified
+
+
+06)This is not even in git docs
+
+folder not track till it have file.
+.gitkeep(nothing there)
+git add .
+git commit -m "upload this file"
+
+if we tracke a folder of nothing there 
+
+<--------Git for team management-------->
+01)Git tree listing
+Is-tree:- lists the content of a given tree object,like what 
+"/bin/ls -a" does in the current working directory.
+.Full SHA-1,Partial SHA-1,Branch Reference,Tag reference
+, ^,~
+
+ls, ls -la, git log
+
+02)Git log details
+https://git-scm.com/docs/git-log
+
+
+<---------06)Git branches---------->
+01)Git branching details
+try new ideas,collabation,merging,context switching
+               []->[]->[]->[]
+             /
+[]->[]->[]->[]->[]->[]->[]->[]
+             \          /
+               []--->[]/
+
+ Head is always point to tip og current branch              
+02)Creating a new branch in Git
+check first
+------------ 
+03revert>ls
+on branch master
+nothing to commit working tree clean
+2 way of checking branch
+-----------------------
+git branch
+* master
+----------------
+ls -la .git/refs/heads
+--------------------------
+heades tap on branches
+
+how to create branch?
+always choose one word name nver used space it will be nightmare
+
+{git branch new_nav}
+git branch
+first way
+* master
+new_nav
+checking-2way
+ls -la .git/refs/heads
+
+how we switch ?
+git checkout new_nav
+
+myfunction.txt-add content "i am adding a nav in this file."
+git log --oneline
+(HEAD,new_nav,new_foot have same sha-1 bez not change occure)
+
+git commit -am "new commit for new nav branch"
+-am automatticly done staging and do commit with msg.
+
+
+03)Checkout branches
+new_nav we create another branch new_footer using command
+{git checkout -b new_footer} 
+it create the branch and automatic switch to branch
+{git log --oneline}
+
+we are in new_footer and myfunction.txt add content" i am new footer branch" add commit msg"added a footer"
+
+you want to know every log of every branch
+{git log --graph --oneline --decorate --all}
+
+again  go back to master branch
+myfunction.txt-content msg" a new div is addes in master branch"
+after wrting content we cannot switch branch if we do that we loss data whatever we do before
+{git checkout new_foot}
+if we dont want discard data we commit it first 0r stash it
+
+
+04)RD(renaming and deleting ) of branches in Git
+check first:-
+1)git status
+2)git branch (*master)
+
+checking what is different?
+git diff new_nav..new_footer
+
+how  we rename the branch?
+
+{git branch -m new_nav new_navigation}
+-m is move
+
+how we delete  the branch?
+1)git branch delete_me(create)
+{git branch -d delete_me}
+
+again create delete_me_again branch
+switch to delete_me_again branch
+{git Checkout delete_me_again}
+and check {git branch for verfication}
+and try to delete it cannot happen
+{git branch -d delete_me_again}
+1 way:-
+for deleting this branch u have to go other branch to deleted.
+
+2 way:- while in delete_me_again branch
+myfunction.txt we write some content
+and change its branch to master and try to delete the branch delete_me_again
+it show some msg it not equal to master dont do it.
+but for rember purpose we yell it so,
+{git branch -d branch name(delete_me_again)}
+
+<-------Git merging----------->
+01)Basics of Merging in Git
+ALWAYS check git status and git branch(*master)
+{git checkout -b new_chart}(*new_chart)
+my.txt ontent-msg"added a chart function in our branch"
+
+we canot go to master branch after doing above thing
+in order to merage we have to go to master branch
+{git status}
+modified-red
+{git commit -am "chart function add"}
+git status{clean tree}
+{git checkout master}
+check {git branch}
+
+for merage{git merge new_chart}
+
+
+
+02)Fast forword
+ 03revert -git status(clean tree)- git branch(*master,new_chart,new_foot,new_footer,new_navigation)
+ then{git checkout -b fasty}(*fasty)
+ after branch in fasty than create a file name fasty.txt
+ content msg"I am a new login page"
+ git status(red-modified)
+ git add fasty.txt
+ git commit -m "fasty function added"
+ git status(clean tree)
+
+ git log --oneline -2
+ copy 2-commit here.
+
+ then git checkout master(switch to master)
+ git log --oneline -2
+ git merge fasty(fast-forword)
+ tip of fasty now master tip
+
+ situation2:-
+
+
+03)Conflicts and merging in Git
+04)Stashing a branch
+05)Stashing in multiple branches
+06)Clean your stash
+
+<---------Git and GitHub----->
+01)Git online hosting
+02)creating a
+<-----------Tags and Tickets-------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

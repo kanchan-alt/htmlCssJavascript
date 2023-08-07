@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/retro-living-room-interior-design_53876-145503.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:34% 39%;
+    color: whitesmoke;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 7em;
+
+}
+
+.logo_left{
+    font-size: 1.7em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 1em;
+
+}
+
+
+
+
+.middle_part{
+    /* border: 1px solid  red; */
+    margin-bottom: 2.8em;
+    margin-left: 4em;
+   
+}
+
+
+.middle_part ul{
+    display: flex;
+    list-style: none;
+    
+}
+.middle_part ul li {
+   margin: 0 2.2em;
+}
+.middle_part ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.right_part{
+    display: flex;
+    margin-bottom: 2.4em;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+  
+}
+
+.right_part_left{
+    /* border: 1px solid red; */
+    color: whitesmoke;
+}
+.right_part_right{
+    margin-left: 14px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+.line{
+    width: 65%;
+     margin-left: 23em;
+     margin-top: -2.8em;
+    
+    border: 1px solid white;
+}
+
+section{
+    margin: 5em 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftPart{
+    width: 60%;
+    /* border: 1px solid red; */
+    margin-top: 3em;
+
+}
+.leftPart h1{
+    font-size: 4.8vmin;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    line-height: 1em;
+    opacity: 1;
+  
+}
+.leftPart button{
+    margin-top: 2.5em;
+    border:1px solid white;
+    border-radius: 4em;
+    padding: 1em 2em;
+    background: transparent;
+    color: white;
+   
+}
+
+/* rightPart */
+
+.rightPart{
+   width: 40%;
+   /* border:  1px solid red ; */
+   position: relative;
+}
+.rightPartOne{
+    /* border: 1px solid green; */
+    width: 45%;
+    height: 40%;
+    background-color:rgb(51, 68, 82);
+    position: absolute;
+    top: 0;
+    left: 16em;
+    padding: 1em 1.5em;   
+}
+.svgimages{
+    width: 70px;
+    padding: 0.1em 1.6em;
+    border-radius: 3em;
+    background: white;
+    color: black;
+    margin-bottom: 10px;
+   
+}
+.smallLine{
+   position: relative;
+   top: 7.9em;
+   right: 3em;
+    height: 13%;
+    border-right: 1px solid gainsboro;
+}
+
+.circle{
+    position: relative;
+    top: 7.8em;
+    left: 24.6em;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: gainsboro;
+}
+
+.rightPartTwo{
+    /* border: 1px solid green; */
+    width: 45%;
+    height: 40%;
+    background-color:rgb(51, 68, 82);
+    position: absolute;
+    top: 18em;
+    padding: 1em 1.5em;
+
+}
+.smallLine_two{
+    width:9% ;
+    position: relative;
+    /* top: 23.5em; */
+    left: 12.6em;
+    border: 1px solid gainsboro;
+ }
+
+
+.circle_two{
+    position: relative;
+    top: 19.1em;
+    left: 0em;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: gainsboro;
+}

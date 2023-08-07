@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <h1 class="logo">ADEVENTURE</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#"></a>HOME</li>
+        <li><a href="#"></a>TOURS</li>
+        <li><a href="#"></a>EXPLORE</li>
+        <li><a href="#"></a>ABOUT</li>
+        <li class="ctn"> <a href="#"></a>CONTACT</li>
+      </ul>
+
+      <img src="img/menu-btn.png" alt="" class="menu-btn">
+
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <!-- events -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcomming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/img1.png" alt="">
+                <h4>Everest Camp Treak</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt tempora exercitationem expedita molestiae explicabo aspernatur, tempore repudiandae blanditiis natus, illum voluptatibus cupiditate iste architecto quo ipsum commodi sit neque.</p>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+
+            <!-- 2nd card -->
+            <div class="col">
+                <img src="img/img2.png" alt="">
+                <h4>Walking Hoilday</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt tempora exercitationem expedita molestiae explicabo aspernatur, tempore repudiandae blanditiis natus, illum voluptatibus cupiditate iste architecto quo ipsum commodi sit neque.</p>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- explore -->
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, blanditiis itaque necessitatibus harum ipsum, maxime error doloribus expedita accusamus mollitia cum. Deserunt neque esse dolorum?</p>
+            <a href="#" class="ctn">Learn more</a>
+        </div>
+    </section>
+
+    <!-- tours -->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam omnis pariatur esse veritatis ex, modi sed quibusdam laudantium unde libero recusandae, facilis temporibus velit sunt?</p>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/img3.png" alt="">
+                    <img src="img/img4.png" alt="">
+                    <img src="img/img5.png" alt="">
+                    <img src="img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit officia temporibus</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+    </section>
+<!-- navbar for small screen toggle  -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLink = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navLink.classList.toggle('mobile-menu')
+        })
+    </script>
+    
+</body>
+</html>

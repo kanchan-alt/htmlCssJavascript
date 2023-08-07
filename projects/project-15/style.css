@@ -1,0 +1,1512 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,600;1,700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    /* 1rem = 10px */
+    overflow-x: hidden;
+  }
+body{
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+.header {
+   border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+
+.logo {
+    object-fit: contain;
+    height:2.6em;
+   
+   
+   
+  }
+
+.navbar-list {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    padding: 2.4em;
+  }
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  transition: all 0.3s;
+  font-family: "poppins";
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #19adc7;
+}
+
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+   
+  }
+  
+.mobile-nav-icon {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+
+    
+}
+  
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+/* 2section-content */
+
+.content{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  height: 550px;
+  width: 85%;
+  margin: auto;
+}
+.content-image-right{
+  border: 1px solid green;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.content-image-right img{
+  object-fit: contain;
+  height: 60vmin;
+}
+
+.main-content{
+  width: 50%;
+  font-family: "poppins";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  
+}
+.main-content h3{
+  font-size: 6.7vmin;
+  font-weight: 600;
+  color: rgb(192, 14, 14);
+}
+
+.main-content h1{
+  font-size: 4.3vmin;
+  font-weight: 600;
+}
+
+.main-content p{
+  font-size: 2vmin;
+  font-weight: 200;
+  padding: 1.8em 0;
+}
+
+.common-btn{
+  border: none;
+  padding: 1em 4.6em;
+  color: white;
+  background:rgb(192, 14, 14) ;
+  font-size: 1.7vmin;
+  font-weight: 900;
+}
+
+
+/* 3section-design  */
+.design{
+  height: 630px;
+  position: relative;
+ 
+}
+.half-background{
+   height: 630px;
+   width: 50%;
+   background:rgb(16, 16, 17);
+   position: absolute;
+   z-index: -1;
+}
+.container-top{
+  width: 70%;
+  margin: auto;
+  height: 300px;
+ 
+
+  
+}
+.carts{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.cart{
+  background: rgb(33, 31, 31);
+  width: 25%;
+  padding: 1.6em 1.7em;
+  margin-top: 3em;
+  
+}
+.cart h2{
+  margin: 0.4em 0;
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: "poppins";
+}
+.cart p{
+  font-size: 2vmin;
+  font-weight: 300;
+  margin: 0.6em 0;
+  font-family: "poppins";
+  color: rgb(184, 178, 178);
+
+}
+.cart span a{
+    text-decoration: none;
+    color: red;
+    font-size: 2vmin;
+    font-weight: 200;
+    font-family: "poppins";
+}
+
+.cart-red{
+  background:rgb(192, 14, 14);
+  
+}
+.cart-red p{
+  color: rgb(224, 220, 220);
+}
+.cart-red span a{
+  color: whitesmoke;
+
+}
+
+.container-bottom{
+  width: 70%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "poppins";
+}
+.container-bottom-left{
+ text-align: center;
+ padding-top: 5em;
+ width: 26%;
+ height: 70%;
+ 
+}
+.container-bottom-left h1{
+  font-size: 6.5vmin;
+  color: red;
+}
+
+.container-bottom-left h2{
+  font-size: 3vmin;
+
+}
+.middle,.right{
+ width: 26%;
+ height: 80%;
+ 
+}
+.mid-right{
+  text-align: center;
+  width: 100%;
+  height: 55%;
+  background: rgb(33, 31, 31);
+  padding:0.1em;
+  margin-top: 0.6em;
+
+  
+}
+.mid-right h3{
+
+  font-size: 1.7em;
+  color: red;
+  margin-top: 1em;
+
+}
+.mid-right h4{
+ 
+  font-size: 1.3em;
+   width: 100%;
+
+}
+
+/*4.section-project  */
+.projectSection{
+  width: 85%;
+  margin: auto;
+  border: 1px solid green;
+  padding: 3em 0;
+ 
+  
+}
+.projectContents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid olive;
+  width: 80%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.projectContents h3{
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: "poppins";
+  margin-bottom: 0.2em;
+}
+.projectContents p{
+  font-size: 1.8vmin;
+  font-family: "poppins";
+  color: gray;
+
+}
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  
+}
+
+.project-background{
+  background: rgb(33, 31, 31);
+  padding: 0.8em;
+ 
+}
+.project{
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.project-image{
+  object-fit: contain;
+  height: 15em;
+  padding:0.6em;
+ 
+}
+
+.project h3{
+  font-size: 2vmin;
+  font-weight: 500;
+  font-family: 'poppins';
+  margin: 0.3em 0;
+}
+
+.project span a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: red;
+  font-size: 1.9vmin;
+  font-weight: 500;
+}
+
+/* 5th section-contact  */
+.contact{
+  width: 70%;
+  margin:auto;
+  border: 1px solid red;
+
+}
+.contact-background{
+  background: rgb(33, 31, 31);
+  padding: 3.6em;
+  
+}
+
+.contact-contexts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-context-left{
+  border: 1px solid blue;
+  width: 60%;
+}
+.contact-context-right{
+  border: 1px solid green;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.contact-context-left h1{
+  font-family: 'poppins';
+  font-size: 5vmin;
+  font-weight: 500;
+  width: 85%;
+  line-height: 1.2em;
+  margin-bottom: 0.4em;
+
+}
+
+.contact-context-left p{
+  font-family: 'poppins';
+  font-size: 1.9vmin;
+  color: grey;
+ 
+
+}
+
+.contact-btn{
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: whitesmoke;
+  font-family: 'poppins';
+  border: none;
+  background: red;
+  padding: 0.6em 3em;
+
+
+}
+.bootom-nav{
+ border: 4px solid green;
+}
+
+.bootom-nav-list{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: 4px solid orange;
+  padding: 3.5em 1em 1.5em;
+}
+.bootom-nav-link{
+  list-style: none;
+  border: 1px solid blueviolet;
+  margin: 0 0.5em;
+ 
+}
+
+.bootom-nav-link a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: rgb(203, 193, 193);
+  font-size: 2.1vmin;
+  padding: 0.7em;
+}
+
+/* footer section */
+.footer{
+  background: rgb(33, 31, 31);
+  width: 100%;
+  height: 7em;
+  border: 1px solid red;
+}
+.footer-nav{
+  width: 70%;
+  margin: 2em auto;
+  border: 1px solid green;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  
+}
+.bottomlogo{
+  object-fit: contain;
+  height: 5vmin;
+
+}
+.social{
+ border: 1px solid rebeccapurple;
+ margin-left: 24em;
+}
+.social img{
+ margin: 0 1em;
+}
+
+
+
+
+@media (min-width:1025px) and (max-width: 1200px){
+
+/* 3section-design  */
+.cart h2{
+  font-size: 2.6vmin;
+}
+.cart p{
+  font-size: 1.5vmin;
+}
+.cart span a{
+    font-size: 2vmin;
+}
+
+.cart-red h2{
+  font-size: 2.4vmin;
+  line-height: 1em;
+}
+
+.container-bottom{
+  border: 1px solid gold;
+}
+
+.container-bottom-left h1{
+  font-size: 6vmin;
+}
+
+.container-bottom-left h2{
+  font-size: 2.7vmin;
+
+}
+
+.mid-right h3{
+  font-size: 1.5em;
+  color: red;
+  margin-top: 1em;
+
+}
+.mid-right h4{
+  font-size: 1em;
+  width: 100%;
+
+}
+
+
+/*4.section-project  */
+.projectSection{
+  width: 90%;
+  margin: auto;
+  border: 1px solid green;
+  padding: 3em 0;
+ 
+  
+}
+.projectContents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid olive;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.projectContents h3{
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: "poppins";
+  margin-bottom: 0.2em;
+}
+.projectContents p{
+  font-size: 1.8vmin;
+  font-family: "poppins";
+  color: gray;
+
+}
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.project-background{
+  background: rgb(33, 31, 31);
+  padding: 0.8em;
+ 
+}
+.project{
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.project-image{
+  object-fit: contain;
+  height: 15em;
+  padding:0.6em;
+ 
+}
+
+.project h3{
+  font-size: 2vmin;
+  font-weight: 500;
+  font-family: 'poppins';
+  margin: 0.3em 0;
+}
+
+.project span a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: red;
+  font-size: 1.9vmin;
+  font-weight: 500;
+}
+
+/* 5th section-contact  */
+.contact{
+  width: 78%;
+
+}
+.contact-background{
+  padding: 3.4em;
+  
+}
+
+.contact-context-left h1{
+  font-size: 4vmin;
+  width: 93%;
+}
+
+
+.contact-btn{
+  padding: 0.5em 2.7em;
+}
+
+
+}
+
+
+@media (min-width:769px) and (max-width: 1024px){
+  .mobile-navbar-btn {
+    display: block;
+    /* z-index: 999; */
+    border: 3px solid #212529;
+    color: #212529;
+
+  }
+  
+  .header {
+    position: relative;
+    justify-content: space-between;
+    width: 87%;
+    margin: auto;
+    padding-top: 2.7em;
+  }
+
+  .logo { 
+    height: 2.4em;
+
+  }
+
+  .mobile-nav-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    min-height: 570px;
+    background: rgb(14, 95, 146);
+    position: absolute;
+    top: 6em;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .content{
+    width: 87%;
+  
+  }
+  .content-image-right{
+      align-items: center;
+  }
+
+  .content-image-right img{
+   
+    height: 50vmin;
+  }
+  
+  .main-content h3{
+    font-size: 5vmin;
+  }
+  
+  .main-content h1{
+    font-size: 3.9vmin;
+  }
+  
+  .main-content p{
+    font-size: 1.9vmin;
+    padding: 1.5em 0;
+  }
+  
+  .common-btn{
+    padding: 1em 4em;
+    color: white;
+    background:rgb(192, 14, 14) ;
+    font-size: 1.5vmin;
+    
+  }
+
+/* 3section-design  */
+
+.container-top{
+  width: 78%;
+  border: 1px solid red;
+}
+
+.cart{
+  width: 26%;
+  padding: 1em;
+}
+.cart h2{
+  margin: 0.6em 0;
+  font-size: 2vmin;
+}
+.cart p{
+  font-size: 1.4vmin;
+  font-weight: 300;
+}
+.cart span a{
+  font-size: 1.8vmin;
+}
+
+.container-bottom{
+  width: 78%;
+  border: 1px solid green;
+}
+
+.container-bottom-left h1{
+  font-size: 5vmin;
+}
+
+.container-bottom-left h2{
+  font-size: 2.5vmin;
+
+}
+
+.mid-right h3{
+  font-size: 1.5em;
+}
+.mid-right h4{
+  font-size: 1.1em;
+  width: 100%;
+
+}
+
+/*4.section-project  */
+
+.projectSection{
+  width: 95%;
+  margin: auto;
+  border: 1px solid green;
+  padding: 3em 0;
+ 
+  
+}
+.projectContents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid olive;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.projectContents h3{
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: "poppins";
+  margin-bottom: 0.2em;
+}
+.projectContents p{
+  font-size: 1.8vmin;
+  font-family: "poppins";
+  color: gray;
+
+}
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.project-background{
+  background: rgb(33, 31, 31);
+  padding: 0.8em;
+ 
+}
+.project{
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.project-image{
+  object-fit: contain;
+  height: 11em;
+  padding:0.6em;
+ 
+}
+
+.project h3{
+  font-size: 2vmin;
+  font-weight: 500;
+  font-family: 'poppins';
+  margin: 0.3em 0;
+}
+
+.project span a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: red;
+  font-size: 1.9vmin;
+  font-weight: 500;
+}
+
+/* 5th section-contact  */
+.contact{
+  width: 82%;
+
+}
+.contact-background{
+  padding: 3em;
+}
+
+.contact-context-left{
+  border: 1px solid blue;
+  width: 60%;
+}
+.contact-context-right{
+  border: 1px solid green;
+  width: 40%;
+  
+}
+.contact-context-left h1{
+  font-size: 4vmin;
+  width: 100%;
+
+}
+
+.contact-context-left p{
+  font-size: 1.8vmin;
+ 
+}
+
+.contact-btn{
+  font-size: 0.8em;
+  padding: 0.5em 3em;
+}
+.bootom-nav{
+ border: 4px solid green;
+}
+
+
+.bootom-nav-link a{
+  font-size: 2vmin;
+  padding: 0.7em;
+}
+
+/* footer section */
+
+.footer-nav{
+  width: 82%;
+}
+
+.social{
+ margin-left: 20em;
+}
+  
+
+}
+
+@media (min-width:481px) and (max-width: 768px){
+
+    .mobile-navbar-btn {
+      display: block;
+      /* z-index: 999; */
+      border: 3px solid #212529;
+      color: #212529;
+  
+    }
+    
+    .header {
+      position: relative;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+      padding-top: 2.7em;
+    }
+  
+    .logo { 
+      height: 2.2em;
+  
+    }
+  
+    .mobile-nav-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+  
+    .navbar {
+      /* display: none; */
+      width: 100%;
+      min-height: 540px;
+      background: rgb(14, 95, 146);
+      position: absolute;
+      top: 6em;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      /* to get the tranisition  */
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+  
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none; 
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+  
+    }
+    
+  
+    .active .navbar {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+  
+    .content{
+      width: 90%;
+    
+    }
+    .content-image-right{
+        align-items: center;
+    }
+  
+    .content-image-right img{
+     
+      height: 48vmin;
+    }
+    
+    .main-content h3{
+      font-size: 5vmin;
+    }
+    
+    .main-content h1{
+      font-size: 3.7vmin;
+    }
+    
+    .main-content p{
+      font-size: 1.9vmin;
+      padding: 1.5em 0;
+    }
+    
+    .common-btn{
+      padding: 1em 3.8em;
+      font-size: 1.5vmin;
+      
+    }
+
+/* 3section-design  */
+
+.container-top{
+  width: 90%;
+  border: 1px solid orangered;
+}
+
+.cart{
+  width: 27%;
+  padding: 1em;
+}
+.cart h2{
+  font-size: 2.6vmin;
+  line-height: 1em;
+}
+.cart p{
+  font-size: 1.7vmin;
+}
+.cart span a{
+  font-size: 1.9vmin;
+}
+
+
+.container-bottom{
+  width: 90%;
+}
+
+.container-bottom-left h1{
+  font-size: 5vmin;
+}
+
+.container-bottom-left h2{
+  font-size: 2.7vmin;
+
+}
+
+.mid-right h3{
+  font-size: 1.5em;
+}
+.mid-right h4{
+  font-size: 1em;
+  width: 100%;
+}
+
+
+/*4.section-project  */
+.projectSection{
+  width: 90%;
+  margin: auto;
+  border: 1px solid green;
+  padding: 3em 0;
+ 
+  
+}
+.projectContents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid olive;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.projectContents h3{
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: "poppins";
+  margin-bottom: 0.2em;
+}
+.projectContents p{
+  font-size: 1.8vmin;
+  font-family: "poppins";
+  color: gray;
+
+}
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.project-background{
+  background: rgb(33, 31, 31);
+  padding: 0.8em;
+ 
+}
+.project{
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.project-image{
+  object-fit: contain;
+  height: 14em;
+  padding:0.6em;
+ 
+}
+
+.project h3{
+  font-size: 2vmin;
+  font-weight: 500;
+  font-family: 'poppins';
+  margin: 0.3em 0;
+}
+
+.project span a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: red;
+  font-size: 1.9vmin;
+  font-weight: 500;
+}
+
+/* 5th section-contact  */
+.contact{
+  width: 90%;
+}
+.contact-background{
+  padding: 2em;
+  
+}
+
+.contact-context-left{
+  border: 1px solid blue;
+  width: 65%;
+}
+.contact-context-right{
+  width: 35%;
+  justify-content: flex-end;
+}
+.contact-context-left h1{
+  font-size: 4.5vmin;
+  width: 100%;
+}
+
+.contact-context-left p{
+  font-size: 2vmin;
+  width: 100%;
+}
+
+.contact-btn{
+  font-size: 0.8em;
+  padding: 0.4em 2.7em;
+}
+
+/* footer section */
+
+.footer-nav{
+  width: 90%;
+  margin: 1.9em auto;
+  
+  
+}
+.bottomlogo{
+  object-fit: contain;
+  height: 5vmin;
+
+}
+.social{
+ border: 1px solid rebeccapurple;
+ margin-left: 11em;
+}
+
+ 
+}
+
+
+
+
+@media (min-width:320px) and (max-width: 480px){
+
+    .mobile-navbar-btn {
+      display: block;
+      /* z-index: 999; */
+      border: 3px solid #212529;
+      color: #212529;
+  
+    }
+    
+    .header {
+      position: relative;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+      padding-top: 2em;
+    }
+  
+    .logo { 
+      height: 2.1em;
+  
+    }
+  
+    .mobile-nav-icon {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  
+  
+    .navbar {
+      /* display: none; */
+      width: 100%;
+      min-height: 550px;
+      background: rgb(14, 95, 146);
+      position: absolute;
+      top: 4.9em;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      /* to get the tranisition  */
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+  
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none; 
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+  
+    }
+    
+  
+    .active .navbar {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+  
+    .content{
+      width: 90%;
+     flex-direction: column;
+    
+    }
+    .content-image-right{
+      width: 100%;
+    
+    }
+
+    .main-content{
+      width: 100%;
+    }
+  
+    .content-image-right img{
+      height: 60vmin;
+    }
+    
+    .main-content h3{
+      font-size: 6vmin;
+   
+    }
+    
+    .main-content h1{
+      font-size: 8vmin;
+    }
+    
+    .main-content p{
+      font-size: 2.5vmin;
+    }
+    
+    .common-btn{
+      padding: 1.5em 6em;
+      color: white;
+      background:rgb(192, 14, 14) ;
+      font-size: 2vmin;
+      
+    }
+
+
+/* 3section-design  */
+
+.container-top{
+  width: 90%;
+  margin: auto;
+  height: 300px;
+ border: 1px solid red; 
+}
+
+.cart{
+  background: rgb(33, 31, 31);
+  width: 26%;
+  padding: 1em;
+  margin-top: 3em;
+  
+}
+.cart h2{
+  font-size: 2.6vmin;
+  font-size: 700;
+  line-height: 1em;
+}
+.cart p{
+  font-size: 2vmin;
+  font-weight: 300;
+}
+.cart span a{
+    font-size: 2vmin;
+   
+}
+
+
+.container-bottom{
+  width: 90%;
+  border: 1px solid green;
+}
+.container-bottom-left{
+ text-align: center;
+ padding-top: 5em;
+ width: 26%;
+ height: 70%;
+ 
+}
+
+.container-bottom-left h2{
+  font-size: 3vmin;
+
+}
+
+.mid-right h3{
+  font-size: 1.5em;
+}
+.mid-right h4{
+  font-size: 0.8em;
+  width: 100%;
+
+}
+
+   
+
+/*4.section-project  */
+
+.projectSection{
+  width: 95%;
+  margin: auto;
+  border: 1px solid green;
+  padding: 3em 0;
+ 
+  
+}
+.projectContents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid olive;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.projectContents h3{
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: "poppins";
+  margin-bottom: 0.2em;
+}
+.projectContents p{
+  font-size: 1.8vmin;
+  font-family: "poppins";
+  color: gray;
+
+}
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.project-background{
+  background: rgb(33, 31, 31);
+  padding: 0.8em;
+ 
+}
+.project{
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.project-image{
+  object-fit: contain;
+  height: 10em;
+  padding:0.6em;
+ 
+}
+
+.project h3{
+  font-size: 2vmin;
+  font-weight: 500;
+  font-family: 'poppins';
+  margin: 0.3em 0;
+}
+
+.project span a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: red;
+  font-size: 1.9vmin;
+  font-weight: 500;
+}
+
+/* 5th section-contact  */
+.contact{
+  width: 95%;
+}
+.contact-background{
+  padding: 1em;
+  
+}
+
+.contact-contexts{
+flex-direction: column;
+}
+
+.contact-context-left{
+  border: 1px solid blue;
+  width: 100%;
+}
+.contact-context-right{
+  border: 1px solid green;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.contact-context-left h1{
+  font-size: 6vmin;
+  font-weight: 500;
+  width: 100%;
+
+}
+
+.contact-context-left p{
+  font-size: 3.3vmin;
+}
+
+.contact-btn{
+  font-size: 0.8em;
+  padding: 0.4em 2.6em;
+  margin-top: 0.3em;
+}
+.bootom-nav{
+ border: 4px solid green;
+}
+
+.bootom-nav-list{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: 4px solid orange;
+  padding: 3em 0 1em;
+}
+.bootom-nav-link{
+  list-style: none;
+  border: 1px solid blueviolet;
+  margin: 0 0.5em;
+ 
+}
+
+.bootom-nav-link a{
+  text-decoration: none;
+  font-family: 'poppins';
+  color: rgb(203, 193, 193);
+  font-size: 3vmin;
+  padding: 0.7em;
+}
+
+/* footer section */
+.footer{
+  width: 100%;
+}
+.footer-nav{
+  width: 90%;
+  margin: 2em auto;
+  border: 1px solid green;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  
+}
+.bottomlogo{
+  object-fit: contain;
+  height: 7vmin;
+
+}
+.social{
+ border: 1px solid rebeccapurple;
+ margin-left: 5em;
+}
+.social img{
+ margin: 0 0.6em;
+}
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+

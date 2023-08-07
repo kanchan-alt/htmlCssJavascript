@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../html_cssproject"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ineuron"
+	}
+}
